@@ -18,14 +18,14 @@ Next select the settings for you new project:
 
 Click **OK** when done.
 
-.. image:: /images/new-project-dialog.png
+.. image:: /images/wad-management/new-project-dialog.png
 
 Open a map
 ----------
 
 Use the :kbd:`File -> Open Map` menu or press :kbd:`Control-o`. Make sure you pick **Find map in the PWAD above**, otherwise you will be modifying the maps from the freedoom1 IWAD.
 
-.. image:: /images/open-map.png
+.. image:: /images/wad-management/open-map.png
 
 
 Add a new map
@@ -33,7 +33,7 @@ Add a new map
 
 Use the :kbd:`File -> Fresh Map` menu, you are prompted to pick the slot where the new map will be placed, green slots are empty and red slots already contain maps.
 
-.. image:: /images/fresh-map-dialog.png
+.. image:: /images/wad-management/fresh-map-dialog.png
 
 Change the play order
 ---------------------
@@ -42,7 +42,7 @@ Use the :kbd:`File -> Rename Map` menu to change the play order of a map, a dial
 
 Slots with existing maps cannot be selected.
 
-.. image:: /images/rename-map-dialog.png
+.. image:: /images/wad-management/rename-map-dialog.png
 
 Copy a map
 ----------
@@ -62,11 +62,11 @@ Use the :kbd:`File -> Export Map` menu to export the current map to:
 * a new WAD
 * an existing WAD
 
-.. image:: /images/export-map-file-chooser.png
+.. image:: /images/wad-management/export-map-file-chooser.png
 
 *Pick the file to export to*
 
-.. image:: /images/export-map-level-chooser.png
+.. image:: /images/wad-management/export-map-level-chooser.png
 
 *Select the level of the exported map*
 
