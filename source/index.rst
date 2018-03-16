@@ -6,7 +6,7 @@ Eureka Guide
 
    introduction
    installation
-   wad-management
-   ui
-   basics
-   cookbook
+   wad-management/index
+   ui/index
+   basics/index
+   cookbook/index

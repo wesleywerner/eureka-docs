@@ -6,16 +6,16 @@ Views
 
 Eureka features a top orthogonal view where one constructs wall boundaries and places things on the map.
 
-.. image:: /images/ui/2d-view.png
+.. image:: 2d-view.png
 
 It also has a 3D view where one previews texture changes and ceiling, floor and light adjustments. Switch between the two views with the :kbd:`tab` key.
 
-.. image:: /images/ui/3d-view.png
+.. image:: 3d-view.png
 
 Placing the camera
 ------------------
 
-.. image:: /images/ui/camera.png
+.. image:: camera.png
 
 Press :kbd:`'` (single quote) in the 2D view to position the 3D camera at the location of the mouse cursor.
 
@@ -43,4 +43,4 @@ Toggle the grid in 2D view with the **Grid** dropdown box (located on the bottom
 
 Toggle free mode / grid snapping with the :kbd:`f` key.
 
-.. image:: /images/ui/2d-grid.png
+.. image:: 2d-grid.png
