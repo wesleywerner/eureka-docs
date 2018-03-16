@@ -13,7 +13,7 @@ Starters
 
     stairs/index
     curved-stairs/index
-    open-skies/index
+    sky/index
     altar/index
     workstation/index
 
