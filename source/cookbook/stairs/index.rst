@@ -4,12 +4,12 @@ Stairs
 .. image:: stairs-01.png
 
 Layout
-^^^^^^
+------
 
 .. image:: stairs-02.png
 
 Method
-^^^^^^
+------
 
 * In vertice edit mode, use the :kbd:`RMB` to create an outline:
 .. image:: stairs-03.png
@@ -27,6 +27,8 @@ Method
 * Repeat raising the floor and unselecting the next step:
 .. image:: stairs-07.png
 
+Downloads
+---------
 
 :download:`stairs.wad`
 

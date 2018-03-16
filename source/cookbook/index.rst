@@ -8,11 +8,14 @@ The starters are all about shape and design, while the mains feature special eff
 Starters
 --------
 
-* :doc:`stairs/index`
-* :doc:`curved-stairs/index`
-* :doc:`open-skies/index`
-* :doc:`altar/index`
-* :doc:`workstation/index`
+.. toctree::
+    :maxdepth: 1
+
+    stairs/index
+    curved-stairs/index
+    open-skies/index
+    altar/index
+    workstation/index
 
 
 .. Mains
@@ -22,4 +25,3 @@ Starters
 
 .. Deserts
     -------
-
