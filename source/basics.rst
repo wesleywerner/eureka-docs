@@ -55,7 +55,7 @@ While in the 2D view, you can select Vertices, Linedefs, Sectors and Things by:
 
 * Clicking an item to select/unselect it
 * Drag-select multiple items to include/exclude them in the selection
-* Drag an item or multiple selected items to move
+* Hold :kbd:`shift` to prevent moving things around when making a selection
 
 Switching between Vertices, Linedefs and Sectors will preserve any selections as much as possible.
 

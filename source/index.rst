@@ -9,4 +9,4 @@ Eureka Guide
    wad-management
    ui
    basics
-   practice
+   cookbook
