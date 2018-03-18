@@ -11,6 +11,8 @@ Work in progress
 Building
 ========
 
+[![Documentation Status](https://readthedocs.org/projects/eureka/badge/?version=latest)](http://eureka.readthedocs.io/en/latest/?badge=latest)
+
 The docs are built with [Sphinx](http://www.sphinx-doc.org/en/master/#). You need Python installed, use `pip` to install Sphinx:
 
     $ pip install sphinx
