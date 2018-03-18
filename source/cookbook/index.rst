@@ -15,7 +15,7 @@ Starters
     curved-stairs/index
     sky/index
     altar/index
-    workstation/index
+    prefabs/index
 
 
 .. Mains
