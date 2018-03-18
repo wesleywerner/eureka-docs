@@ -3,18 +3,18 @@ Sacrificial Altar
 
 .. image:: capture_004.png
 
-Using concentric circles we construct a sumptous sacrificial altar.
+Using concentric circles we construct a sumptuous sacrificial altar.
 
 Method
 ------
 
-In vertice edit mode, create a rectangle of points:
+In vertex edit mode, create a rectangle of points:
 
 .. image:: capture_005.png
 
 This rectangle will be transformed into a circle using the arc shaping tools.
 
-Select the center pair of points and scale by `1.9` on the `y` plane:
+Select the centre pair of points and scale by `1.9` on the `y` plane:
 
 .. image:: capture_006.png
 
@@ -44,7 +44,7 @@ We now have the base for our altar:
 
 Switch to sector edit mode and select the circle sector. :kbd:`control-c` and :kbd:`control-v` to make a copy. Scale the copy to `1.2` on both `x` and `y` planes.
 
-Switching to 3D view at this point will show the copied sector rendering with artifacts, this is because the copied sector needs merging into the room. Hover with the cursor inside the copied sector, the surrounding room highlights up to indicate this, and press :kbd:`spacebar` to solidify the sector:
+Switching to 3D view at this point will show the copied sector rendering with artefacts, this is because the copied sector needs merging into the room. Hover with the cursor inside the copied sector, the surrounding room highlights up to indicate this, and press :kbd:`spacebar` to solidify the sector:
 
 .. image:: capture_012.png
 

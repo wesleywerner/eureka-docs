@@ -6,18 +6,18 @@ These building basics focus on level geometry only. There is no logic or game tr
 Vertices
 --------
 
-Vertices are the joins between Linedefs and the corners between walls.
+Vertices are the joins between Lines, and the corners between walls.
 
 * Press :kbd:`v` in the 2D view to enter Vertices edit mode
-* :kbd:`LMB` while hovering over a Linedef inserts a single vertice at the cursor position
-* :kbd:`RMB` inserts a vertice in **line drawing** mode, keep adding vertices with :kbd:`RMB` until you close the polygon
+* :kbd:`LMB` while hovering over a Linedef inserts a single vertex at the cursor position
+* :kbd:`RMB` inserts a vertex in **line drawing** mode, keep adding vertices with :kbd:`RMB` until you close the polygon
 
 .. image:: vertices.png
 
 Linedefs
 --------
 
-Linedefs define the areas in a map. Every linedef is between two vertices. Linedefs divide the map into sectors, and thet are also used to trigger actions.
+Linedefs divide the map into sectors, and they are also used to trigger actions.
 
 Press :kbd:`l` in the 2D view to enter Linedef edit mode.
 
@@ -53,7 +53,7 @@ Multiple Selections
 
 While in the 2D view, you can select Vertices, Linedefs, Sectors and Things by:
 
-* Clicking an item to select/unselect it
+* Clicking an item to select/deselect it
 * Drag-select multiple items to include/exclude them in the selection
 * Hold :kbd:`shift` to prevent moving things around when making a selection
 
@@ -81,7 +81,7 @@ Click on :kbd:`Edit -> Scale Objects` or press :kbd:`F3` to show the scale dialo
 
 .. image:: scale-dialog.png
 
-*Scaling the vertices by 50% on the x-axiz*
+*Scaling the vertices by 50% on the x-axis*
 
 .. image:: scale-result.png
 
@@ -131,7 +131,7 @@ The relation of the sidedefs are best illustrated with these poorly-matched text
 .. image:: textures-browser.png
 
 
-Pro Tip: You can copy-paste Sidedefs quickly by hiliting the master Linedef to copy, hovering over the target Linedef and pressing the :kbd:`c` key. For this to work you must only have the one Linedef selected.
+Pro Tip: You can copy-paste sidedefs quickly by hi-lighting the master Linedef to copy, hovering over the target Linedef and pressing the :kbd:`c` key. For this to work you must only have the one Linedef selected.
 
 
 Floor / Ceiling Textures
@@ -149,7 +149,7 @@ You can enter the 3D view to see a preview of the texture changes:
 
 .. image:: floor-ceil-browser.png
 
-Pro Tip: You can copy-paste ceiling and floor textures quickly by hiliting the master sector, hovering over the target sector and pressing the :kbd:`c` key.
+Pro Tip: You can copy-paste ceiling and floor textures quickly by hi-lighting the master sector, hovering over the target sector and pressing the :kbd:`c` key.
 
 
 Creating Sectors
@@ -161,14 +161,14 @@ There are two ways to create a new sector in the 2D view:
 
 .. image:: create-sector-shortcut.png
 
-2. Enter Vertice edit mode, use the :kbd:`RMB` to begin a line drawing operation, adding points until the new sector is closed. Enabling grid snapping will assist in placing the vertices.
+2. Enter vertex edit mode, use the :kbd:`RMB` to begin a line drawing operation, adding points until the new sector is closed. Enabling grid snapping will assist in placing the vertices.
 
 .. image:: create-sector-vertices.png
 
 Expanding Sectors
 -----------------
 
-Switch to Vertice edit mode and use the :kbd:`RMB` to insert a new vertice on one side of the room, add a second vertice to the Linedef on the opposite side of the room. A new Linedef is created between the two vertices.
+Switch to vertex edit mode and use the :kbd:`RMB` to insert a new vertex on one side of the room, add a second vertex to the Linedef on the opposite side of the room. A new Linedef is created between the two vertices.
 
 .. image:: split-room.png
 
@@ -186,7 +186,7 @@ Switch to 3D view and use the ceiling and floor height :kbd:`+/-` buttons:
 
 .. image:: floor-ceiling-heights.png
 
-These shortcuts can be used:
+These keys can be used:
 
 * :kbd:`,.` adjust floor height (hold shift for small increments)
 * :kbd:`[]` adjust ceiling height (hold shift for small increments)
@@ -194,6 +194,6 @@ These shortcuts can be used:
 Joining Sectors
 ---------------
 
-Enter Vertice edit mode and use the :kbd:`RMB` to insert vertices that bridge the sectors.
+Enter vertex edit mode and use the :kbd:`RMB` to insert vertices that bridge the sectors.
 
 .. image:: join-sectors-via-vertices.png

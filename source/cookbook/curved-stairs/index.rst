@@ -12,7 +12,7 @@ Layout
 Method
 ------
 
-Draw the outline of the stairs in vertice edit mode:
+Draw the outline of the stairs in vertex edit mode:
 
 .. image:: capture_003.png
 
@@ -40,11 +40,11 @@ Switch to sector edit mode, hold :kbd:`shift` and drag-select the stair sectors:
 
 .. image:: capture_010.png
 
-Press the raise floor shortcut (:kbd:`.`) twice. Using the :kbd:`LMB`, unselect the left-most step, and unselect the right-most step:
+Press the raise floor shortcut (:kbd:`.`) twice. Using the :kbd:`LMB`, deselect the left-most step, and deselect the right-most step:
 
 .. image:: capture_011.png
 
-* Repeat raising the floor and unselecting a step from either side, until you reach the center step. Your stairs are now done:
+* Repeat raising the floor and deselecting a step from either side, until you reach the center step. Your stairs are now done:
 
 .. image:: capture_012.png
 

@@ -15,7 +15,7 @@ However the walls can get in the way of that nice view:
 
 .. image:: capture_002.png
 
-To lower the walls, add a border sector near the edge (hilighted below):
+To lower the walls, add a border sector near the edge (highlighted below):
 
 .. image:: capture_003.png
 

@@ -1,7 +1,7 @@
 Prefabs
 =======
 
-Prefabs are useful to quickly throw maps together by copy-pasting predesigned structures.
+Prefabs are useful to quickly throw maps together by copy-pasting pre-designed structures.
 
 .. image:: capture_001.png
 
@@ -22,7 +22,7 @@ Use :download:`prefabs.wad` as a base for adding your own designs.
 Merging Vertices
 ----------------
 
-Copying a prefab into void space, like a door prefab, needs vertice merging.
+Copying a prefab into void space, like a door prefab, needs vertex merging.
 
 Select the door prefab in sector mode, press :kbd:`control-c`:
 
@@ -32,15 +32,15 @@ Open the target map, position the mouse cursor where you want the prefab and pas
 
 .. image:: capture_004.png
 
-Enter vertice edit mode, use the :kbd:`RMB` to link the room with the door vertices:
+Enter vertex edit mode, use the :kbd:`RMB` to link the room with the door vertices:
 
 .. image:: capture_005.png
 
-If you optionally want to get rid of the extra sector in between, select the one room vertice, then the matching door vertice (this order matters) and merge them:
+If you optionally want to get rid of the extra sector in between, select the one room vertex, then the matching door vertex (this order matters) and merge them:
 
 .. image:: capture_006.png
 
-Do the same for the other vertices (selecting the room vertice first):
+Do the same for the other vertices (selecting the room vertex first):
 
 .. image:: capture_007.png
 
@@ -61,11 +61,11 @@ Copy, open your map, and paste. Ensure your mouse cursor is positioned where you
 
 .. image:: capture_010.png
 
-Switching to 3D view shows us artifacts, the prefab needs merging first:
+Switching to 3D view shows us artefacts, the prefab needs merging first:
 
 .. image:: capture_011.png
 
-To merge, unselect everything (:kbd:`\``), hover to hilight the room sector and press :kbd:`space`:
+To merge, deselect everything (:kbd:`\``), hover to highlight the room sector and press :kbd:`space`:
 
 .. image:: capture_012.png
 

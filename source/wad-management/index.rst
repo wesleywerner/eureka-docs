@@ -23,7 +23,7 @@ Click **OK** when done.
 Open a map
 ----------
 
-Use the :kbd:`File -> Open Map` menu or press :kbd:`Control-o`. Make sure you pick **Find map in the PWAD above**, otherwise you will be modifying the maps from the freedoom1 IWAD.
+Use the :kbd:`File -> Open Map` menu or press :kbd:`control-o`. Make sure you pick **Find map in the PWAD above**, otherwise you will be modifying the maps from the freedoom1 IWAD.
 
 .. image:: open-map.png
 
