@@ -8,7 +8,7 @@ Contents
 
    introduction
    installation
+   user-interface/index
    wad-management/index
-   ui/index
    basics/index
    cookbook/index
