@@ -1,10 +1,6 @@
 WAD Management
 ==============
 
-You need an IWAD file to play any stock Doom engine, this file contains the default game levels, textures, sounds and other auxiliary data.
-
-A PWAD (Patch WAD) provides additional levels and other resources that replace those in the IWAD. When making levels in Eureka we will be working with PWADs, any mention of WAD implies the PWAD unless otherwise mentioned.
-
 Create a new WAD
 ----------------
 
@@ -35,8 +31,8 @@ Use the :kbd:`File -> Fresh Map` menu, you are prompted to pick the slot where t
 
 .. image:: fresh-map-dialog.png
 
-Change the play order
----------------------
+Rename a map
+------------
 
 Use the :kbd:`File -> Rename Map` menu to change the play order of a map, a dialog prompts you to pick the new slot for the map.
 

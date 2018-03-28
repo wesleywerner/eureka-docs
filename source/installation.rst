@@ -1,16 +1,43 @@
 Installation
 ============
 
+Requirements
+------------
+
+IWAD
+^^^^
+
+A IWAD file, or "Internal WAD", contains the default maps, textures, sounds and other auxiliary data. You can use the `DOOM.WAD`, `DOOM1.WAD` or `DOOM2.WAD` files if you own those.
+
+Alternatively you can download the `Freedoom <http://freedoom.github.io/>`_ WADS, Freedoom is liberally licensed under the BSD license and provides free levels, artwork, sound effects and music compatible with any classic Doom source port. Download and extract Freedoom to an accessible location of your choice. If you are a GNU / Linux user you may extract the Freedoom WADS into ``~/.eureka/iwads/`` where they are automatically detected for your convenience.
+
+.. note::
+
+    A PWAD file, or "Patch WAD", provides additional levels and other resources that replace those in the IWAD. When making levels in Eureka we will be working with PWADs - any mention of a WAD file implies the PWAD unless otherwise noted.
+
+Doom Engine
+^^^^^^^^^^^
+
+You will need a Doom source port to play-test your maps. I can recommend PrBoom, but here are a couple of them to give you some more options:
+
+* `PrBoom <http://prboom.sourceforge.net/>`_ - an advanced engine with fine control of options controlling compatibility and new features
+* `GZDoom <https://gzdoom.drdteam.org/>`_ - an advanced engine with many features
+* `Crispy Doom <https://fabiangreffrath.github.io/crispy-doom>`_ - a minimalist engine with few extra features
+* `Chocolate Doom <https://www.chocolate-doom.org>`_ - accurately reproduces the experience of Doom as it was played in the 1990s
+
+
 Windows
 -------
 
-Locate the latest version on `the download page <https://sourceforge.net/projects/eureka-editor/files/Eureka/>`_ and grab `eureka-*-win.zip`.
+To get the latest Eureka for Windows, go to the `Eureka project page <https://sourceforge.net/projects/eureka-editor/>`_ and click the big "download" button. Extract the zip somewhere memorable and run `eureka.exe`.
 
 GNU / Linux
 -----------
 
+Your package manager might contain Eureka, albeit if outdated you can opt to build from source.
+
 * Locate the latest version on `the download page <https://sourceforge.net/projects/eureka-editor/files/Eureka/>`_
-* Get `eureka-*-source.tar.gz`
+* Get and extract `eureka-*-source.tar.gz`
 * Install the build dependencies:
 
 ::
@@ -30,6 +57,7 @@ GNU / Linux
 
 ::
 
+    $ cd eureka*
     $ make
 
 * install Eureka
@@ -38,15 +66,6 @@ GNU / Linux
 
     $ sudo make install
 
-*See file INSTALL.txt included with the Eureka source for detailed build instructions.*
+.. note::
 
-
-Doom Engine
------------
-
-To test our maps we need a Doom engine, we will use the PrBoom engine as it is multi-platform. Go ahead and `install PrBoom <http://prboom.sourceforge.net/>`_ or via your package manager.
-
-IWAD Configuration
-------------------
-
-This guide will use the `Freedoom <http://freedoom.github.io/>`_ IWAD, download and extract Freedoom to an accessible location of your choice. If you are a GNU / Linux user you may extract the Freedoom WADS into ``~/.eureka/iwads/`` for convenience.
+    See file INSTALL.txt included with the Eureka source for detailed build instructions.
