@@ -1,5 +1,13 @@
-WAD Management
-==============
+Project Management
+==================
+
+Your WAD can contain multiple maps, and their numbering is determined by the source IWAD you choose to use.
+
+For Doom1, or Freedoom1, you get 4 episodes of 9 maps each: E1M1-9, E2M1-9, E3M1-9 and E4M1-9.
+
+For Doom2, or Freedoom2, you get 32 maps: MAP01 - MAP32.
+
+This manual will focus on the Freedoom1 IWAD.
 
 Create a new WAD
 ----------------
@@ -9,7 +17,7 @@ Use the **File -> New Project** menu to create a new WAD, choose the location an
 Next select the settings for you new project:
 
 * IWAD: pick freedoom1 from the list, use the **Find** button if you need to browse for it
-* Source Port: pick boom from the list, use the **Setup** button to browse for the executable
+* Source Port: pick boom (or your nearest source port) from the list, use the **Setup** button to browse for the executable
 * If you are a GNU / Linux user, you can find the location of the executable with the bash command ``which prboom``.
 
 Click **OK** when done.

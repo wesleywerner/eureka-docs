@@ -9,6 +9,6 @@ Contents
    introduction
    installation
    user-interface/index
-   wad-management/index
+   project-management/index
    basics/index
    cookbook/index
