@@ -10,5 +10,6 @@ Contents
    installation
    user-interface/index
    project-management/index
+   mapping-concepts/index
    basics/index
    cookbook/index
