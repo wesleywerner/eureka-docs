@@ -1,7 +1,11 @@
 Building Basics
 ===============
 
-These building basics focus on level geometry only. There is no logic or game triggers here.
+These building basics focus on level geometry.
+
+.. note::
+
+    LMB: left mouse button click, RMB: right mouse button click
 
 Vertices
 --------
@@ -44,7 +48,7 @@ Things
 
 Things represent players, monsters, pick-ups, obstacles, decorations, player start positions and teleport landing sites.
 
-Press :kbd:`t` in the 2D view to enter Things edit mode.
+Press :kbd:`t` in the 2D view to enter Things edit mode. :kbd:`space` or :kbd:`ins` inserts a new thing at the cursor position.
 
 .. image:: things.png
 
@@ -130,10 +134,6 @@ The relation of the sidedefs are best illustrated with these poorly-matched text
 
 .. image:: textures-browser.png
 
-
-Pro Tip: You can copy-paste sidedefs quickly by hi-lighting the master Linedef to copy, hovering over the target Linedef and pressing the :kbd:`c` key. For this to work you must only have the one Linedef selected.
-
-
 Floor / Ceiling Textures
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -148,9 +148,6 @@ Click the texture buttons to open the texture browser:
 You can enter the 3D view to see a preview of the texture changes:
 
 .. image:: floor-ceil-browser.png
-
-Pro Tip: You can copy-paste ceiling and floor textures quickly by hi-lighting the master sector, hovering over the target sector and pressing the :kbd:`c` key.
-
 
 Creating Sectors
 ----------------
