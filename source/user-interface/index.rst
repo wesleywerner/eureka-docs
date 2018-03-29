@@ -48,3 +48,18 @@ Toggle free mode / grid snapping with the :kbd:`f` key.
 .. note::
 
     If you encounter lag while panning a large zoomed-out map, disable grid rendering with :kbd:`g` while panning.
+
+Rendering Mode
+--------------
+
+**TODO**
+
+Find and Replace
+----------------
+
+**TODO**
+
+Preferences
+-----------
+
+**TODO**

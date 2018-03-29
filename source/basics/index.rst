@@ -1,48 +1,83 @@
 Building Basics
 ===============
 
-Creating Sectors
-----------------
+.. note::
 
-There are two ways to create a new sector in the 2D view:
+    LMB: left mouse button click, RMB: right mouse button click
 
-1. Enter Sector edit mode, hover the mouse cursor where the new sector is to be placed and press :kbd:`space` or :kbd:`insert`.
+To follow these building basics, create a new project in Eureka.
 
-.. image:: create-sector-shortcut.png
+Adding a room
+-------------
 
-2. Enter vertex edit mode, use the :kbd:`RMB` to begin a line drawing operation, adding points until the new sector is closed. Enabling grid snapping will assist in placing the vertices.
+To help with drawing, press :kbd:`f` to toggle grid snapping, press :kbd:`g` to enable grid display, and press :kbd:`5` to set the grid size to 32 units.
 
-.. image:: create-sector-vertices.png
+* Press :kbd:`tab` to switch to the 2D view
+* Press :kbd:`v` to enter vertices edit mode
+* Use the :kbd:`RMB` to draw a new sector. Make sure to keep adding vertices with the right mouse button, and to close the sector.
 
-Expanding Sectors
------------------
+.. image:: adding-01.png
 
-Switch to vertex edit mode and use the :kbd:`RMB` to insert a new vertex on one side of the room, add a second vertex to the Linedef on the opposite side of the room. A new Linedef is created between the two vertices.
+**Texturing the new walls**
 
-.. image:: split-room.png
+Press :kbd:`l` to enter linedef edit mode. The new linedefs should be selected, if not click with the LMB and drag a box around them to select.
 
+.. image:: adding-02.png
 
-Floor / Ceiling Height
-----------------------
+* Position the mouse cursor inside your new sector and press :kbd:`'` to place the camera inside the room.
+* Press :kbd:`tab` to enter 3D view
+* Click the front sidedef texture button and pick the SLADWALL texture.
 
-Enter Sector editing mode and select the sector to change:
+.. image:: adding-04.png
+.. image:: adding-03.png
 
-.. image:: floor-ceil-height-2d.png
+**Texturing the new floor and ceiling**
 
-Switch to 3D view and use the ceiling and floor height :kbd:`+/-` buttons:
+* Press :kbd:`tab` to return to 2D view
+* Press :kbd:`s` to enter sector edit mode. The new sector should remain selected, if not click the LMB to select it.
+* Press :kbd:`tab` to return to the 3D view
+* Click on both the **Floor** and **Ceiling** texture buttons, and select the FLOOR5_1 texture.
+.. image:: adding-05.png
+.. image:: adding-06.png
 
-.. image:: floor-ceil-buttons-closeup.png
+Joining rooms
+-------------
 
-.. image:: floor-ceiling-heights.png
+* Press :kbd:`tab` to enter 2D view
+* Press :kbd:`v` for vertices edit mode
+* Click with the :kbd:`RMB` to insert vertices that bridge the neighbouring sectors
+* Make the line of the doorway 128 units in length, this is the size of the wide door texture
+* When the join is complete, the rooms are connected
 
-These keys can be used:
+.. image:: joining-01.png
+.. image:: joining-02.png
 
-* :kbd:`,.` adjust floor height (hold shift for small increments)
-* :kbd:`[]` adjust ceiling height (hold shift for small increments)
+Adjusting ceiling height
+------------------------
 
-Joining Sectors
----------------
+* Press :kbd:`tab` to enter 2D view
+* Press :kbd:`s` for sector edit mode
+* Select the sector you want to adjust
+.. image:: joining-03.png
+* Press :kbd:`tab` to return to 3D view
+* Click the ceiling `+-` buttons to adjust the ceiling height
+.. image:: joining-04.png
+* Alternatively press :kbd:`[]` to adjust ceiling height via keyboard shortcuts
 
-Enter vertex edit mode and use the :kbd:`RMB` to insert vertices that bridge the sectors.
+.. image:: joining-05.png
 
-.. image:: join-sectors-via-vertices.png
+Fixing texture alignment
+------------------------
+
+* Press :kbd:`tab` to enter 3D view
+* Click with the :kbd:`LMB` to select walls with misaligned textures
+.. image:: alignment-01.png
+* Press :kbd:`F1` to open the operations menu
+.. image:: alignment-02.png
+* Select the **Align Y** option
+.. image:: alignment-03.png
+
+Making a door
+-------------
+
+**TODO**
