@@ -20,7 +20,7 @@
 # -- Project information -----------------------------------------------------
 
 project = u'Eureka'
-copyright = u'2018, Wesley Werner'
+copyright = u'2018, Eureka Doom Editor'
 author = u'Wesley Werner'
 
 # The short X.Y version
