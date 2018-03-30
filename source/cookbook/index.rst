@@ -15,11 +15,17 @@ Starters
     curved-stairs/index
     sky/index
     altar/index
+    toxic-pool/index
+
+
+
+Mains
+-----
+
+.. toctree::
+    :maxdepth: 1
+
     prefabs/index
-
-
-.. Mains
-    -----
 
 .. See https://doomwiki.org/wiki/Linedef_type
 

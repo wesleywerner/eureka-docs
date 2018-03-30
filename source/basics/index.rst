@@ -76,8 +76,3 @@ Fixing texture alignment
 .. image:: alignment-02.png
 * Select the **Align Y** option
 .. image:: alignment-03.png
-
-Making a door
--------------
-
-**TODO**
