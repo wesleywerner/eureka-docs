@@ -27,6 +27,7 @@ Mains
 
     doors/index
     teleporters/index
+    lifts/index
     prefabs/index
 
 .. See https://doomwiki.org/wiki/Linedef_type
