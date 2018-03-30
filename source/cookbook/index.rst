@@ -26,6 +26,7 @@ Mains
     :maxdepth: 1
 
     doors/index
+    teleporters/index
     prefabs/index
 
 .. See https://doomwiki.org/wiki/Linedef_type
