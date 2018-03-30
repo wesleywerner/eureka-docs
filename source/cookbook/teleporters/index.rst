@@ -27,3 +27,8 @@ Landing Site
 * Enter Thing edit mode (:kbd:`t`), position the mouse cursor inside the landing sector and press :kbd:`ins`. Choose the **Type** as `14 Teleport Exit` (labelled as TFOG in the thing browser)
 .. image:: teleport-04.png
 * Click the directional arrows to set the angle of the `TFOG` thing. This is the angle faced after teleporting.
+
+Downloads
+---------
+
+:download:`teleporters.wad`

@@ -84,3 +84,8 @@ Remote doors are opened through a switch.
 .. note::
 
     The SR line special indicates a switch that can be toggled repeatedly, while S1 is a switch that can only be toggled once.
+
+Downloads
+---------
+
+:download:`doors.wad`
