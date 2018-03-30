@@ -52,7 +52,38 @@ Toggle free mode / grid snapping with the :kbd:`f` key.
 Rendering Mode
 --------------
 
-**TODO**
+The `View / Sector Rendering` menu toggles how the 2D view draws sectors.
+
+.. image:: sector-rendering-menu.png
+
+Floors
+^^^^^^
+
+This mode draws the floor textures of sectors.
+
+.. image:: sector-rendering-floors.png
+
+Ceilings
+^^^^^^^^
+
+This mode draws the ceiling textures of sectors.
+
+.. image:: sector-rendering-ceilings.png
+
+Lighting
+^^^^^^^^
+
+The light render mode draws shades of sector light levels.
+
+.. image:: sector-rendering-lighting.png
+
+Sound
+^^^^^
+
+The sound render mode highlights sectors where sound will reach. Hover the mouse cursor over the sector in question to highlight where sounds originating will propagate.
+
+.. image:: sector-rendering-sound.png
+
 
 Find and Replace
 ----------------
