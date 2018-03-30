@@ -88,9 +88,8 @@ The sound render mode highlights sectors where sound will reach. Hover the mouse
 Find and Replace
 ----------------
 
-**TODO**
+Open the find panel with the `View / Find` menu or press :kbd:`control-f`.
 
-Preferences
------------
+You can search for Things, line textures, sector flats, lines by type (specials) or sectors by type.
 
-**TODO**
+.. image:: find-panel.png
