@@ -86,3 +86,11 @@ Fixing texture alignment
 * Select the **Align Y** option
 
 .. image:: alignment-03.png
+
+* Alternatively use these keyboard shortcuts to align:
+    * :kbd:`x`: align X offset with wall to the left
+    * :kbd:`y`: align Y offset with wall to the left
+    * :kbd:`z`: align both X and Y offsets with wall to the left
+    * :kbd:`shift-x`: align X offset with wall to the right
+    * :kbd:`shift-y`: align Y offset with wall to the right
+    * :kbd:`shift-z`: align both X and Y offsets with wall to the right
