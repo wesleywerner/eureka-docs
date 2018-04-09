@@ -12,4 +12,8 @@ Contents
    project-management/index
    mapping-concepts/index
    basics/index
+
+.. toctree::
+   :maxdepth: 2
+
    cookbook/index
