@@ -37,6 +37,7 @@ Press :kbd:`l` to enter linedef edit mode. The new linedefs should be selected, 
 * Press :kbd:`s` to enter sector edit mode. The new sector should remain selected, if not click the LMB to select it.
 * Press :kbd:`tab` to return to the 3D view
 * Click on both the **Floor** and **Ceiling** texture buttons, and select the FLOOR5_1 texture.
+
 .. image:: adding-05.png
 .. image:: adding-06.png
 
@@ -58,10 +59,14 @@ Adjusting ceiling height
 * Press :kbd:`tab` to enter 2D view
 * Press :kbd:`s` for sector edit mode
 * Select the sector you want to adjust
+
 .. image:: joining-03.png
+
 * Press :kbd:`tab` to return to 3D view
 * Click the ceiling `+-` buttons to adjust the ceiling height
+
 .. image:: joining-04.png
+
 * Alternatively press :kbd:`[]` to adjust ceiling height via keyboard shortcuts
 
 .. image:: joining-05.png
@@ -71,8 +76,13 @@ Fixing texture alignment
 
 * Press :kbd:`tab` to enter 3D view
 * Click with the :kbd:`LMB` to select walls with misaligned textures
+
 .. image:: alignment-01.png
+
 * Press :kbd:`F1` to open the operations menu
+
 .. image:: alignment-02.png
+
 * Select the **Align Y** option
+
 .. image:: alignment-03.png
