@@ -22,7 +22,7 @@ Use this method to make a basic door. It can be used as a base for a manual or a
 .. image:: doors-03.png
 * Enter linedef edit mode (:kbd:`l`) and select the front/rear sides of the door
 .. image:: doors-05.png
-* Since the door raises into the ceiling, we set the **Front Ceiling** textures to the `ICKDOOR1` texture.
+* The door raises into the ceiling, set the front upper sidedef texture to the `ICKDOOR1` texture.
 .. image:: doors-06.png
 * Enter sector edit mode (:kbd:`s`) and select the door sector
 .. image:: doors-04.png
