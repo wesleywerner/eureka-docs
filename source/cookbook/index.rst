@@ -12,4 +12,5 @@ Cookbook
     doors/index
     teleporters/index
     lifts/index
+    traps/index
     prefabs/index
