@@ -11,22 +11,30 @@ Monster Closet
 
 Monsters are staged in a hidden room with a door disguised as a wall or other nondescript panel, which opens to surprise the player.
 
-* Create a sector that will be your hidden closet.
+.. image:: monster_closet_layout.png
+
+Steps
+^^^^^
+
+* Create a sector that will be your hidden closet:
+
+.. image:: monster_closet_sector.png
+
 * Add some monsters inside it.
 * Join it with your room using a door-like sector:
 
-.. image:: monster_closet_01.png
+.. image:: monster_closet_door.png
 
 * Close the closet door so that it looks like a normal wall:
 
-.. image:: monster_closet_02.png
+.. image:: monster_closet_3d.png
 
 * In sector edit mode, hover over the closet door sector, give it a fresh tag (shortcut :kbd:`;` then :kbd:`f`).
 * In vertice edit mode, add the linedef that will trigger the closet to open, when the player walks over the line.
 * In linedef edit mode, select the trigger lines and set the last used tag on the linedefs (shortcut :kbd:`;` then :kbd:`l`). The trigger lines must have the same tag as the closet door sector.
 * Assign the linedef special *Type 109 W1 Open and stay fast* to the trigger line:
 
-.. image:: monster_closet_03.png
+.. image:: monster_closet_trigger.png
 
 
 Monster Platform
