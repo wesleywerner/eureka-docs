@@ -4,10 +4,7 @@ Installation
 Requirements
 ------------
 
-IWAD
-^^^^
-
-A IWAD file, or "Internal WAD", contains the default maps, textures, sounds and other auxiliary data. You can use the `DOOM.WAD`, `DOOM1.WAD` or `DOOM2.WAD` files if you own those.
+A IWAD file, or "Internal WAD", contains the default maps, textures, sounds and other auxiliary data. You can use the `DOOM.WAD` or `DOOM2.WAD` files if you own those.
 
 Alternatively you can download the `Freedoom <http://freedoom.github.io/>`_ WADS, Freedoom is liberally licensed under the BSD license and provides free levels, artwork, sound effects and music compatible with any classic Doom source port. Download and extract Freedoom to an accessible location of your choice. If you are a GNU / Linux user you may extract the Freedoom WADS into ``~/.eureka/iwads/`` where they are automatically detected for your convenience.
 
@@ -18,13 +15,12 @@ Alternatively you can download the `Freedoom <http://freedoom.github.io/>`_ WADS
 Doom Engine
 ^^^^^^^^^^^
 
-You will need a Doom source port to play-test your maps. I can recommend PrBoom, but here are a couple of them to give you some more options:
+You will need a Doom source port to play-test your maps. Here are a couple of options you can browse:
 
-* `PrBoom <http://prboom.sourceforge.net/>`_ - an advanced engine with fine control of options controlling compatibility and new features
-* `GZDoom <https://gzdoom.drdteam.org/>`_ - an advanced engine with many features
-* `Crispy Doom <https://fabiangreffrath.github.io/crispy-doom>`_ - a minimalist engine with few extra features
-* `Chocolate Doom <https://www.chocolate-doom.org>`_ - accurately reproduces the experience of Doom as it was played in the 1990s
-
+* `Chocolate Doom <https://www.chocolate-doom.org>`_ - accurately reproduces the experience of Doom as it was played in the 1990s. A safe option for testing your maps.
+* `PrBoom <http://prboom.sourceforge.net/>`_ - an advanced engine with fine-grained control over options controlling compatibility levels. This port is the standard for recording and playing of demos.
+* `Crispy Doom <https://fabiangreffrath.github.io/crispy-doom>`_ - a minimalist engine with few extra features.
+* `GZDoom <https://gzdoom.drdteam.org/>`_ - an advanced and moddable engine with many features, including newer and non-standard features. You should not base your map's compatibility off this port alone.
 
 Windows
 -------
