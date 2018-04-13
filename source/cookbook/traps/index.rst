@@ -13,9 +13,6 @@ Monsters are staged in a hidden room with a door disguised as a wall or other no
 
 .. image:: monster_closet_layout.png
 
-Steps
-^^^^^
-
 * Create a sector that will be your hidden closet:
 
 .. image:: monster_closet_sector.png
@@ -29,18 +26,38 @@ Steps
 
 .. image:: monster_closet_3d.png
 
-* In sector edit mode, hover over the closet door sector, give it a fresh tag (shortcut :kbd:`;` then :kbd:`f`).
-* In vertice edit mode, add the linedef that will trigger the closet to open, when the player walks over the line.
-* In linedef edit mode, select the trigger lines and set the last used tag on the linedefs (shortcut :kbd:`;` then :kbd:`l`). The trigger lines must have the same tag as the closet door sector.
+* Apply a fresh tag to the closet door sector.
+* Add the trigger lines that will open the closet, and apply the same tag on them.
 * Assign the linedef special *Type 109 W1 Open and stay fast* to the trigger line:
 
 .. image:: monster_closet_trigger.png
-
 
 Monster Platform
 ----------------
 
 Monsters are staged atop a wall that lowers to surprise the player.
+
+.. image:: monster_platform_3d.png
+
+* Add the platform sectors with some monsters in them:
+
+.. image:: monster_platform_sectors.png
+
+* Raise the platform floors and ceilings:
+
+.. image:: monster_platform_raised.png
+
+* All the way to the top:
+
+.. image:: monster_platform_raised_top.png
+
+* Select the platform sectors and apply a fresh tag:
+
+.. image:: monster_platform_tags.png
+
+* Add a switch, apply the platform tags, set the type to **23 S1 Floor down LEF**:
+
+.. image:: monster_platform_switch.png
 
 Crushers
 --------
