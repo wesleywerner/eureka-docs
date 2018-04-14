@@ -79,8 +79,8 @@ Lock-In Trap
 
 Lock all the exits in a room, forcing the player into close combat for a short time.
 
-.. image:: lock-in-trap.png
-    :target: /_images/lock-in-trap.png
+.. image:: lock-in_trap.png
+    :target: /_images/lock-in_trap.png
 
 * Create the open door sector (A) and assign a fresh tag to it.
 * Add the linedef that will trigger the door to close (B).
@@ -92,7 +92,20 @@ Lock all the exits in a room, forcing the player into close combat for a short t
 Teleport Ambush
 ---------------
 
-Monsters stationed in a hidden room waken to the sound of gunfire, walk over a teleport trigger and summon themselves to a designated location.
+Monsters stationed in a hidden room wake up to the sound of gunfire, walk over a teleport trigger and summon themselves to the designated location.
+
+.. image:: teleport_ambush.png
+    :target: /_images/teleport_ambush.png
+
+* Apply a fresh tag to the sector where the monsters will teleport into (A).
+* Insert the **Teleport exit** thing (type 14, under the "Player" category called `TFOG`) in the sector (A).
+* Create a hidden room where the monsters are stationed (D).
+* Connect the main sector (A) with the hidden room (D) via a sound pipe (B). This allows the sound of gunfire to reach the hidden room, alerting the monsters.
+* Insert a teleport trigger linedef in the hidden room (C), assign the same tag as the exit sector (A), and set the **Type 97 WR Teleport**.
+
+.. note::
+
+    Use the **Sound Sector Rendering** mode (under the View menu), and enter **sector edit mode** in the 2D view to see how sound travels in your map.
 
 Combat Teleporting
 ------------------
