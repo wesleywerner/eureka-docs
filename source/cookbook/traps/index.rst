@@ -58,10 +58,21 @@ The ceiling lowers to crush the player.
 
     Fast crushers do less damage and the player may even survive one round of crushing. Slow crushers take their time, dealing a lot of damage and ensures player death.
 
-Hole Trap
+Drop Trap
 ---------
 
-A section of the floor drops out under the player,
+The floor drops out unexpectly from beneath the player into a room with monsters.
+
+.. image:: drop_trap.png
+    :target: /_images/drop_trap.png
+
+* Add the sector that will drop out beneath the player (A).
+* Tag the sector (A).
+* Add the hidden room the player will drop into, lower it's floor (B).
+* Insert vertices on a wall to create a switch (C).
+* Set the tag of the switch linedef (C) to match the drop sector (A).
+* Set the switch linedef **Type 123 SR Lift Lower /fast** (C).
+
 
 Lock-In Trap
 ------------
