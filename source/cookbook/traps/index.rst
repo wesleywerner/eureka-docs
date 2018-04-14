@@ -40,11 +40,23 @@ Monsters are staged on top a platform that lowers from the ceiling to surprise t
 Crushers
 --------
 
-The ceiling lowers, crushing the player.
+The ceiling lowers to crush the player.
+
+.. image:: crusher.png
+    :target: /_images/crusher.png
+
+* Assign a fresh tag to the sector that will do the crushing (A).
+* Create a linedef that will act as the walk-over trigger (B).
+* Assign the same tag to the trigger linedef (B).
+* Set the trigger linedef (B) **Type 6 W1 Crusher /fast**
 
 .. note::
 
-    You will need to unpeg the lower walls so they do not move up and down with the crushing ceiling.
+    You will need to **lower unpeg** the room sector walls (C) if you do not want the walls to move up and down with the crushing ceiling.
+
+.. warning::
+
+    Fast crushers do less damage and the player may even survive one round of crushing. Slow crushers take their time, dealing a lot of damage and ensures player death.
 
 Hole Trap
 ---------
