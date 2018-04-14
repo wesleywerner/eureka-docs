@@ -24,29 +24,18 @@ Monsters are staged in a hidden room with a door disguised as a wall or other no
 Monster Platform
 ----------------
 
-Monsters are staged atop a wall that lowers to surprise the player.
+Monsters are staged on top a platform that lowers from the ceiling to surprise the player.
 
-.. image:: monster_platform_3d.png
+.. image:: monster_platform.png
+    :target: /_images/monster_platform.png
 
-* Add the platform sectors with some monsters in them:
-
-.. image:: monster_platform_sectors.png
-
-* Raise the platform floors and ceilings:
-
-.. image:: monster_platform_raised.png
-
-* All the way to the top:
-
-.. image:: monster_platform_raised_top.png
-
-* Select the platform sectors and apply a fresh tag:
-
-.. image:: monster_platform_tags.png
-
-* Add a switch, apply the platform tags, set the type to **23 S1 Floor down LEF**:
-
-.. image:: monster_platform_switch.png
+* Add the platform sectors with some monsters in them (A).
+* Raise the platform floors and ceilings (B) until flush with the surrouning ceiling.
+* Select the platform sectors and apply a fresh tag (A).
+* Insert vertices along a wall to make a 64 unit long line, for the switch (C).
+* Set a switch texture (C).
+* Apply the platform tags to the switch linedef (C).
+* Set the switch linedef (C) type to **23 S1 Floor down LEF**.
 
 Crushers
 --------
