@@ -77,7 +77,17 @@ The floor drops out unexpectly from beneath the player into a room with monsters
 Lock-In Trap
 ------------
 
-Close the player in the room for a short period forcing them into combat
+Lock all the exits in a room, forcing the player into close combat for a short time.
+
+.. image:: lock-in-trap.png
+    :target: /_images/lock-in-trap.png
+
+* Create the open door sector (A) and assign a fresh tag to it.
+* Add the linedef that will trigger the door to close (B).
+* Set the linedef **Type 16 W1 Close for 30s**
+
+.. note::
+    If you want to close multiple doors in the room, give them all the same tag.
 
 Teleport Ambush
 ---------------
