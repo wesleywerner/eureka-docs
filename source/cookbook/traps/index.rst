@@ -125,3 +125,13 @@ Nukage Surprise
 ---------------
 
 A floor turns into radioactive waste, dealing damage to the player when walked on.
+
+.. image:: nukage_surprise.png
+    :target: /_images/nukage_surprise.png
+
+* Add a trigger line of **Type 37 W1 Floor down LEF /NXP** (A).
+* Apply a fresh tag to the trigger line (A).
+* Tag the target sector (B) the same as the trigger tag.
+* The target sector (B) must be surrounded by damage sectors (C).
+* The damage sectors (C) are lower than the target sector (B).
+* The damage sectors (C) have **Type 7 Damage 5%** and the **NUKAGE1** texture. On trigger the target sector (B) will lower to the damage sectors (C) and the damage and texture is transferred.
