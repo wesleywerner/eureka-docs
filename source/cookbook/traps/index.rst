@@ -110,12 +110,18 @@ Monsters stationed in a hidden room wake up to the sound of gunfire, walk over a
 Combat Teleporting
 ------------------
 
-Use Type 126 WR Teleport /mon in a combat zone to warp monsters around the player while combat is taking place. This trap is used in Doom II map 10 to great effect with a Cyberdemon.
+Monsters teleport around the player during combat, making engagements less predictable. This trap is used in Doom II map 10 to great effect with a Cyberdemon.
+
+.. image:: combat_teleporting.png
+    :target: /_images/combat_teleporting.png
+
+* Create teleport trigger linedefs of **Type 126 WR Teleport /mon** (A).
+* Apply a fresh tag to the trigger line (A).
+* Apply the same tag to a destination sector (B)
+* Place a **Teleport exit** in the destination sector (B).
+* Repeat as needed, more teleport triggers with different destinations will make for varied encounters.
 
 Nukage Surprise
 ---------------
 
 A floor turns into radioactive waste, dealing damage to the player when walked on.
-
-Exploding Barrels
------------------
