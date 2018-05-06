@@ -71,26 +71,32 @@ Adjusting ceiling height
 
 .. image:: joining-05.png
 
-Fixing texture alignment
-------------------------
+Texture alignment
+-----------------
 
 * Press :kbd:`tab` to enter 3D view
 * Click with the :kbd:`LMB` to select walls with misaligned textures
 
 .. image:: alignment-01.png
 
-* Press :kbd:`F1` to open the operations menu
-
-.. image:: alignment-02.png
-
-* Select the **Align Y** option
-
-.. image:: alignment-03.png
-
-* Alternatively use these keyboard shortcuts to align:
+* Press these keyboard shortcuts to align:
     * :kbd:`x`: align X offset with wall to the left
     * :kbd:`y`: align Y offset with wall to the left
     * :kbd:`z`: align both X and Y offsets with wall to the left
     * :kbd:`shift-x`: align X offset with wall to the right
     * :kbd:`shift-y`: align Y offset with wall to the right
     * :kbd:`shift-z`: align both X and Y offsets with wall to the right
+
+* Alternatively press :kbd:`F1` to open the operations menu and select one of the align options.
+
+.. image:: alignment-02.png
+
+Auto alignment
+--------------
+
+If you need to align multiple surfaces, you can use the auto-align feature:
+
+* In the 2D view, enter linedef edit mode :kbd:`l`
+* Highlight all lines to align
+* Press :kbd:`shift-A` to auto-align offsets on all selected linedefs
+* This shortcut works in both 2D and 3D views

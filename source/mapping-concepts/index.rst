@@ -50,7 +50,7 @@ Press :kbd:`t` in the 2D view to enter Things edit mode. :kbd:`space` or :kbd:`i
 
 .. image:: things.png
 
-Multiple Selections
+Multiple selections
 -------------------
 
 While in the 2D view, you can select Vertices, Linedefs, Sectors and Things by:
@@ -132,7 +132,7 @@ The relation of the sidedefs are best illustrated with these poorly-matched text
 
 .. image:: textures-browser.png
 
-Floor / Ceiling Textures
+Floor / ceiling textures
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
 Enter Sector editing mode and select the sector to change:
