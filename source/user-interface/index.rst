@@ -80,7 +80,13 @@ The light render mode draws shades of sector light levels.
 Sound
 ^^^^^
 
-The sound render mode highlights sectors where sound will reach. Hover the mouse cursor over the sector in question to highlight where sounds originating will propagate.
+The sound render mode highlights sectors based on how sound travels. You have to be in sector edit mode for this mode to work (press :kbd:`s`), hover your mouse cursor over a sector to see how sound will propagate.
+
+* Orange sectors indicate where sound will reach at volume 2
+* Blue sectors indicate connected sectors where sound does not reach
+* Red sectors indicate where sound will reach at volume 1
+
+By setting the `sound block` flag on linedefs, you can lower the volume of traveling sounds. Sounds do not travel across two sound-blocking lines.
 
 .. image:: sector-rendering-sound.png
 
