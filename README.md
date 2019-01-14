@@ -25,6 +25,7 @@ To build:
 
 To auto-build on change detection, and serve the site for development:
 
+    # Browse the docs at http://localhost:8000/
     $ sphinx-autobuild source/ build/
 
 License
