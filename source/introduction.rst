@@ -1,7 +1,7 @@
 Introduction
 ============
 
-Eureka is a map editor for the classic DOOM games, and a few related games such as Heretic and Hexen. It supports Linux, Windows and OS X. Eureka was created by Andrew Apted and ives at http://eureka-editor.sourceforge.net
+Eureka is a map editor for the classic DOOM games, and a few related games such as Heretic and Hexen. It supports Linux, Windows and OS X. Eureka was created by Andrew Apted and lives at http://eureka-editor.sourceforge.net
 
 This manual was written by Wesley Werner. If you find a mistake in this manual `please report it here <https://github.com/wesleywerner/eureka-docs/issues>`_. If you want to contribute, `fork the repo <https://github.com/wesleywerner/eureka-docs>`_ and send a pull request.
 
