@@ -25,11 +25,11 @@ Press :kbd:`l` in the 2D view to enter Linedef edit mode.
 
 .. image:: linedefs.png
 
-A linedef also has a front and a back. You can tell the front of a Linedef by the direction of the protruding pin in the middle of the Linedef.
+A Linedef also has a front and a back. You can tell the front of a Linedef by the direction of the protruding pin in the middle of the Linedef.
 
 .. image:: linedef-front.png
 
-*this linedef front is facing down*
+*this Linedef front is facing down*
 
 
 Sectors
@@ -111,22 +111,22 @@ Sidedefs
 
 A Sidedef refers to the texture data for a Linedef, it can have **lower**, **middle** and **upper** textures.
 
-The relation of the sidedefs are best illustrated with these poorly-matched textures:
+The relation of the Sidedefs are best illustrated with these poorly-matched textures:
 
 .. image:: textures-sidedefs-3d.png
 
 *Lower texture is COMPBLUE, middle is MIDGRATE, and upper texture is BRICK10*
 
 
-**To change the sidedefs**
+**To change the Sidedefs**
 
 * Switch to 2D mode
 * Enter Linedef mode (:kbd:`l`)
-* Select one (or more) linedefs
+* Select one (or more) Linedefs
 
 .. image:: textures-selection.png
 
-* Click the "Front sidedef" texture button to open the texture browser
+* Click the "Front Sidedef" texture button to open the texture browser
 * (optionally) Press :kbd:`tab` to switch to 3D view for a live preview
 * Select a texture in the browser window
 

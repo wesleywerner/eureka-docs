@@ -20,13 +20,13 @@ To help with drawing, press :kbd:`f` to toggle grid snapping, press :kbd:`g` to 
 
 **Texturing the new walls**
 
-Press :kbd:`l` to enter linedef edit mode. The new linedefs should be selected, if not click with the LMB and drag a box around them to select.
+Press :kbd:`l` to enter Linedef edit mode. The new Linedefs should be selected, if not click with the LMB and drag a box around them to select.
 
 .. image:: adding-02.png
 
 * Position the mouse cursor inside your new sector and press :kbd:`'` to place the camera inside the room.
 * Press :kbd:`tab` to enter 3D view
-* Click the front sidedef texture button and pick the SLADWALL texture.
+* Click the front Sidedef texture button and pick the SLADWALL texture.
 
 .. image:: adding-04.png
 .. image:: adding-03.png
@@ -46,7 +46,7 @@ Joining rooms
 
 * Press :kbd:`tab` to enter 2D view
 * Press :kbd:`v` for vertices edit mode
-* Click with the :kbd:`RMB` to insert vertices that bridge the neighbouring sectors
+* Click with the :kbd:`RMB` to insert vertices that bridge the neighboring sectors
 * Make the line of the doorway 128 units in length, this is the size of the wide door texture
 * When the join is complete, the rooms are connected
 
@@ -96,7 +96,7 @@ Auto alignment
 
 If you need to align multiple surfaces, you can use the auto-align feature:
 
-* In the 2D view, enter linedef edit mode :kbd:`l`
+* In the 2D view, enter Linedef edit mode :kbd:`l`
 * Highlight all lines to align
-* Press :kbd:`shift-A` to auto-align offsets on all selected linedefs
+* Press :kbd:`shift-A` to auto-align offsets on all selected Linedefs
 * This shortcut works in both 2D and 3D views

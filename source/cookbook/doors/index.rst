@@ -24,11 +24,11 @@ Use this method to make a basic door. It can be used as a base for a manual or a
 
 .. image:: doors-03.png
 
-* Enter linedef edit mode (:kbd:`l`) and select the front/rear sides of the door
+* Enter Linedef edit mode (:kbd:`l`) and select the front/rear sides of the door
 
 .. image:: doors-05.png
 
-* The door raises into the ceiling, set the front upper sidedef texture to the `ICKDOOR1` texture.
+* The door raises into the ceiling, set the front upper Sidedef texture to the `ICKDOOR1` texture.
 
 .. image:: doors-06.png
 
@@ -45,30 +45,30 @@ Manual Doors
 
 Manual doors open when the player performs the USE action on the door.
 
-* Enter linedef edit mode (:kbd:`l`)
-* Select both linedefs of the door
+* Enter Linedef edit mode (:kbd:`l`)
+* Select both Linedefs of the door
 
 .. image:: doors-08.png
 
-* Choose the **Type** of the linedefs as `1 DR Open Door`
+* Choose the **Type** of the Linedefs as `1 DR Open Door`
 
 To make the door open on a fixed track (the sides stay still while opening and closing):
 
-* Select the track linedefs
+* Select the track Linedefs
 * Check the **upper unpeg** and **lower unpeg** options
 
 .. image:: doors-09.png
 
 .. note::
 
-    The door line specials indicates that the sector facing the back of the linedef is a door, this special does not need a tag either.
+    The door line specials indicates that the sector facing the back of the Linedef is a door, this special does not need a tag either.
 
     The DR special can be opened repeatedly, while D1 can only be opened once.
 
 Locked Doors
 ------------
 
-Doors that require a blue, yellow or red key to open are created similarly to manual doors. When choosing the door linedef type, pick one of the specials that target the keys:
+Doors that require a blue, yellow or red key to open are created similarly to manual doors. When choosing the door Linedef type, pick one of the specials that target the keys:
 
 .. image:: locked-01.png
 
@@ -78,19 +78,19 @@ Remote Doors
 
 Remote doors are opened through a switch.
 
-* Enter vertice edit mode (:kbd:`v`)
-* Use the :kbd:`LMB` to insert vertices along the wall, make the linedef 64 units long
+* Enter Vertice edit mode (:kbd:`v`)
+* Use the :kbd:`LMB` to insert vertices along the wall, make the Linedef 64 units long
 
 .. image:: remote-01.png
 
-* Enter linedef edit mode (:kbd:`l`), select the new linedef
+* Enter Linedef edit mode (:kbd:`l`), select the new Linedef
 * Choose the `SW1GRAY` switch texture
 
 .. image:: remote-02.png
 
-* Choose the linedef **Type** as `63 SR Door Open`
+* Choose the Linedef **Type** as `63 SR Door Open`
 * Move the mouse cursor over the grid to ensure focus is not stolen by the **Line Specials** panel
-* Press :kbd:`;` then :kbd:`f` to apply a fresh tag to the linedef
+* Press :kbd:`;` then :kbd:`f` to apply a fresh tag to the Linedef
 
 .. image:: remote-05.png
 
@@ -102,7 +102,7 @@ Remote doors are opened through a switch.
 
 .. image:: remote-06.png
 
-* Eureka highlights both the sector and the linedef that share the same tag. This shows us the two are linked:
+* Eureka highlights both the sector and the Linedef that share the same tag. This shows us the two are linked:
 
 .. image:: remote-04.png
 

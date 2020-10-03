@@ -86,7 +86,7 @@ The sound render mode highlights sectors based on how sound travels. You have to
 * Blue sectors indicate connected sectors where sound does not reach
 * Red sectors indicate where sound will reach at volume 1
 
-By setting the `sound block` flag on linedefs, you can lower the volume of traveling sounds. Sounds do not travel across two sound-blocking lines.
+By setting the `sound block` flag on Linedefs, you can lower the volume of traveling sounds. Sounds do not travel across two sound-blocking lines.
 
 .. image:: sector-rendering-sound.png
 
