@@ -99,3 +99,42 @@ Open the find panel with the `View / Find` menu or press :kbd:`control-f`.
 You can search for Things, line textures, sector flats, lines by type (specials) or sectors by type.
 
 .. image:: find-panel.png
+
+Alternative key bindings
+-----------------------
+
+This section lists some alternative key bindings you may find useful, while demonstrating how key bindings can be changed or added.
+
+**mouselook in 3D view**
+
+This setting will enable horizontal left/right camera rotation (mouselook) while holding the right mouse button, and vertical up/down motion while holding the right mouse button.
+
+* Open Preference, Keys tab, click the Add button
+* Click the Rebind button followed by the right mouse button (MOUSE3)
+* Choose the Function as `2D View/NAV_MouseScroll`
+* Choose the Mode as 3D View
+* Enter Params as `1`
+* Click OK
+
+**Adjust light levels with the mouse scroll wheel**
+
+This setting allows you to adjust the light level of the selected Sector by holding shift and scrolling the mouse wheel.
+
+* Open Preference, Keys tab, click the Add button
+* Click the Rebind button, hold shift and scroll the mouse wheel Up
+* Choose the Function as `Sector/SEC_Light`
+* Enter Params as `8`
+* Click OK and click Add again
+* Click the Rebind button, hold shift and scroll the mouse wheel Down
+* Choose the Function as `Sector/SEC_Light`
+* Enter Params as `-8`
+* Click OK
+
+**Enhance 2D grid display**
+
+This setting increases the grid visibility and make it easier to distinguish the grid scale in 2D view.
+
+* Open Preference, Grid tab
+* Change the Grid style to Dotty
+* Hover over the Dotty grid colors to locate the "dot color"
+* Change the color to a high visibility hue (cyan for example, is hue 3)
