@@ -112,10 +112,15 @@ You can search for Things, line textures, sector flats, lines by type (specials)
 
 .. image:: find-panel.png
 
-Alternative key bindings
-------------------------
+Key bindings
+------------
 
 This section lists some alternative key bindings you may find useful, while demonstrating how key bindings can be changed or added.
+
+Also see:
+
+* The official `Key System <http://eureka-editor.sourceforge.net/?n=Docs.KeySystem>`_ page.
+* The official `Bind Command Reference <http://eureka-editor.sourceforge.net/?n=Docs.CommandList>`_ page.
 
 **mouselook in 3D view**
 
