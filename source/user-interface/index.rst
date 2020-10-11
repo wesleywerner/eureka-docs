@@ -18,6 +18,7 @@ To move around the 2D view:
 
 * Roll the mouse wheel to zoom
 * Click and drag with the middle mouse button (mouse wheel) to pan
+* Hold the :kbd:`a` key to pan with the mouse
 * Press :kbd:`home` to zoom the whole map into view
 
 The Camera
