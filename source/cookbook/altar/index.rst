@@ -14,7 +14,7 @@ In vertex edit mode, create a rectangle of points:
 
 This rectangle will be transformed into a circle using the arc shaping tools.
 
-Select the centre pair of points and scale by `1.9` on the `y` plane:
+Select the center pair of points and scale by `1.9` on the `y` plane:
 
 .. image:: capture_006.png
 

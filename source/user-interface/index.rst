@@ -18,6 +18,7 @@ To move around the 2D view:
 
 * Roll the mouse wheel to zoom
 * Click and drag with the middle mouse button (mouse wheel) to pan
+* Hold the :kbd:`a` key to pan with the mouse
 * Press :kbd:`home` to zoom the whole map into view
 
 The Camera
@@ -52,43 +53,54 @@ Toggle free mode / grid snapping with the :kbd:`f` key.
 Rendering Mode
 --------------
 
-The `View / Sector Rendering` menu toggles how the 2D view draws sectors.
+The 2D View can render sectors to display their floor or ceiling flats, light levels or sound propagation. You can change the sector rending mode by using the `Rend` dropdown on the status bar, or by pressing the :kbd:`F8` key to bring up the rendering popup.
 
-.. image:: sector-rendering-menu.png
+The status bar dropdown:
 
-Floors
-^^^^^^
+.. image:: sector-rendering-dropdown.png
+
+The :kbd:`F8` popup menu:
+
+.. image:: sector-rendering-statusbar.png
+
+Floor sector rendering
+^^^^^^^^^^^^^^^^^^^^^^
 
 This mode draws the floor textures of sectors.
 
 .. image:: sector-rendering-floors.png
 
-Ceilings
-^^^^^^^^
+Ceiling sector rendering
+^^^^^^^^^^^^^^^^^^^^^^^^
 
 This mode draws the ceiling textures of sectors.
 
 .. image:: sector-rendering-ceilings.png
 
-Lighting
-^^^^^^^^
+Lighting sector rendering
+^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The light render mode draws shades of sector light levels.
 
 .. image:: sector-rendering-lighting.png
 
-Sound
-^^^^^
+Sound sector rendering
+^^^^^^^^^^^^^^^^^^^^^^
 
 The sound render mode highlights sectors based on how sound travels. You have to be in sector edit mode for this mode to work (press :kbd:`s`), hover your mouse cursor over a sector to see how sound will propagate.
 
-* Orange sectors indicate where sound will reach at volume 2
-* Blue sectors indicate connected sectors where sound does not reach
-* Red sectors indicate where sound will reach at volume 1
+* Orange sectors indicate where sound will reach at volume 2, the initial and loudest volume.
+* Red sectors indicate where sound will reach at volume 1.
+* Blue sectors indicate sectors where sound does not reach.
 
-By setting the `sound block` flag on linedefs, you can lower the volume of traveling sounds. Sounds do not travel across two sound-blocking lines.
+When sound travels across a Linedef that has the `sound block` flag set, the volume is reduced by 1. Thus sound travelling across two or more blocking Linedefs will not be heard by monsters.
+By setting the `sound block` flag on Linedefs, you can lower the volume of traveling sounds. Sounds do not travel across two sound-blocking lines.
 
 .. image:: sector-rendering-sound.png
+
+The sound block flag on a Linedef:
+
+.. image:: sector-rendering-sound-flag.png
 
 
 Find and Replace
@@ -99,3 +111,47 @@ Open the find panel with the `View / Find` menu or press :kbd:`control-f`.
 You can search for Things, line textures, sector flats, lines by type (specials) or sectors by type.
 
 .. image:: find-panel.png
+
+Key bindings
+------------
+
+This section lists some alternative key bindings you may find useful, while demonstrating how key bindings can be changed or added.
+
+Also see:
+
+* The official `Key System <http://eureka-editor.sourceforge.net/?n=Docs.KeySystem>`_ page.
+* The official `Bind Command Reference <http://eureka-editor.sourceforge.net/?n=Docs.CommandList>`_ page.
+
+**mouselook in 3D view**
+
+This setting will enable horizontal left/right camera rotation (mouselook) while holding the right mouse button, and vertical up/down motion while holding the right mouse button.
+
+* Open Preference, Keys tab, click the Add button
+* Click the Rebind button followed by the right mouse button (MOUSE3)
+* Choose the Function as `2D View/NAV_MouseScroll`
+* Choose the Mode as 3D View
+* Enter Params as `1`
+* Click OK
+
+**Adjust light levels with the mouse scroll wheel**
+
+This setting allows you to adjust the light level of the selected Sector by holding shift and scrolling the mouse wheel.
+
+* Open Preference, Keys tab, click the Add button
+* Click the Rebind button, hold shift and scroll the mouse wheel Up
+* Choose the Function as `Sector/SEC_Light`
+* Enter Params as `8`
+* Click OK and click Add again
+* Click the Rebind button, hold shift and scroll the mouse wheel Down
+* Choose the Function as `Sector/SEC_Light`
+* Enter Params as `-8`
+* Click OK
+
+**Enhance 2D grid display**
+
+This setting increases the grid visibility and make it easier to distinguish the grid scale in 2D view.
+
+* Open Preference, Grid tab
+* Change the Grid style to Dotty
+* Hover over the Dotty grid colors to locate the "dot color"
+* Change the color to a high visibility hue (cyan for example, is hue 3)
