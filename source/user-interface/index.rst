@@ -52,43 +52,54 @@ Toggle free mode / grid snapping with the :kbd:`f` key.
 Rendering Mode
 --------------
 
-The `View / Sector Rendering` menu toggles how the 2D view draws sectors.
+The 2D View can render sectors to display their floor or ceiling flats, light levels or sound propagation. You can change the sector rending mode by using the `Rend` dropdown on the status bar, or by pressing the :kbd:`F8` key to bring up the rendering popup.
 
-.. image:: sector-rendering-menu.png
+The status bar dropdown:
 
-Floors
-^^^^^^
+.. image:: sector-rendering-dropdown.png
+
+The :kbd:`F8` popup menu:
+
+.. image:: sector-rendering-statusbar.png
+
+Floor sector rendering
+^^^^^^^^^^^^^^^^^^^^^^
 
 This mode draws the floor textures of sectors.
 
 .. image:: sector-rendering-floors.png
 
-Ceilings
-^^^^^^^^
+Ceiling sector rendering
+^^^^^^^^^^^^^^^^^^^^^^^^
 
 This mode draws the ceiling textures of sectors.
 
 .. image:: sector-rendering-ceilings.png
 
-Lighting
-^^^^^^^^
+Lighting sector rendering
+^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The light render mode draws shades of sector light levels.
 
 .. image:: sector-rendering-lighting.png
 
-Sound
-^^^^^
+Sound sector rendering
+^^^^^^^^^^^^^^^^^^^^^^
 
 The sound render mode highlights sectors based on how sound travels. You have to be in sector edit mode for this mode to work (press :kbd:`s`), hover your mouse cursor over a sector to see how sound will propagate.
 
-* Orange sectors indicate where sound will reach at volume 2
-* Blue sectors indicate connected sectors where sound does not reach
-* Red sectors indicate where sound will reach at volume 1
+* Orange sectors indicate where sound will reach at volume 2, the initial and loudest volume.
+* Red sectors indicate where sound will reach at volume 1.
+* Blue sectors indicate sectors where sound does not reach.
 
+When sound travels across a Linedef that has the `sound block` flag set, the volume is reduced by 1. Thus sound travelling across two or more blocking Linedefs will not be heard by monsters.
 By setting the `sound block` flag on Linedefs, you can lower the volume of traveling sounds. Sounds do not travel across two sound-blocking lines.
 
 .. image:: sector-rendering-sound.png
+
+The sound block flag on a Linedef:
+
+.. image:: sector-rendering-sound-flag.png
 
 
 Find and Replace
@@ -101,7 +112,7 @@ You can search for Things, line textures, sector flats, lines by type (specials)
 .. image:: find-panel.png
 
 Alternative key bindings
------------------------
+------------------------
 
 This section lists some alternative key bindings you may find useful, while demonstrating how key bindings can be changed or added.
 
