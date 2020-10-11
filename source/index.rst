@@ -1,7 +1,7 @@
 Contents
 ========
 
-*Manual for Eureka v1.21*
+*Manual for Eureka v1.27*
 
 .. toctree::
    :maxdepth: 3
