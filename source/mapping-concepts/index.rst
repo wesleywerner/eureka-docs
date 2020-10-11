@@ -12,9 +12,18 @@ Vertices are the joins between Lines, and the corners between walls.
 
 * Press :kbd:`v` in the 2D view to enter Vertices edit mode
 * :kbd:`LMB` while hovering over a Linedef inserts a single vertex at the cursor position
-* :kbd:`RMB` inserts a vertex in **line drawing** mode, keep adding vertices with :kbd:`RMB` until you close the polygon
+* :kbd:`RMB` inserts a vertex in **line drawing** mode: keep adding vertices with :kbd:`RMB` until you close the polygon
+* :kbd:`spacebar` also inserts a vertex in **line drawing** mode
 
 .. image:: vertices.png
+
+When inserting vertices inside an existing sector, add the vertices in a clockwise direction to create a sector with two-sided Linedefs:
+
+.. image:: vertices-sector.png
+
+When adding vertices in an anti-clockwise direction, the sector will be void and its Linedefs will be one-sided:
+
+.. image:: vertices-void-sector.png
 
 Linedefs
 --------
@@ -38,6 +47,8 @@ Sectors
 A sector is an area defined by multiple Linedefs.
 
 Press :kbd:`s` in the 2D view to enter Sector edit mode.
+
+Press :kbd:`del` to delete the highlighted sector. If the deleted sector is a child of a larger sector, it will be made void.
 
 .. image:: sectors.png
 
