@@ -93,7 +93,7 @@ The sound render mode highlights sectors based on how sound travels. You have to
 * Red sectors indicate where sound will reach at volume 1.
 * Blue sectors indicate sectors where sound does not reach.
 
-When sound travels across a Linedef that has the `sound block` flag set, the volume is reduced by 1. Thus sound travelling across two or more blocking Linedefs will not be heard by monsters.
+When sound travels across a Linedef that has the `sound block` flag set, the volume is reduced by 1. Thus sound traveling across two or more blocking Linedefs will not be heard by monsters.
 By setting the `sound block` flag on Linedefs, you can lower the volume of traveling sounds. Sounds do not travel across two sound-blocking lines.
 
 .. image:: sector-rendering-sound.png
@@ -112,8 +112,17 @@ You can search for Things, line textures, sector flats, lines by type (specials)
 
 .. image:: find-panel.png
 
-Key bindings
-------------
+Keyboard Shortcuts
+------------------
+
+The Keys page under Tools/Preferences is invaluable for finding or customizing shortcuts. Click the KEY, MODE and FUNCTION header buttons to sort the list. The `Cheatsheet <../cheatsheet>`_ only provides commonly used shortcuts, there are many more to discover.
+
+Eureka uses the concept of a :kbd:`META` key as a prefix to some shortcuts. By default the meta key is :kbd:`;` (semicolon). It can be changed in the Keys page under the function "MetaKey".
+
+.. image:: preferences-keys.png
+
+Suggested Key bindings
+^^^^^^^^^^^^^^^^^^^^^^
 
 This section lists some alternative key bindings you may find useful, while demonstrating how key bindings can be changed or added.
 
@@ -122,9 +131,13 @@ Also see:
 * The official `Key System <http://eureka-editor.sourceforge.net/?n=Docs.KeySystem>`_ page.
 * The official `Bind Command Reference <http://eureka-editor.sourceforge.net/?n=Docs.CommandList>`_ page.
 
-**mouselook in 3D view**
+**Mouselook in the 3D view**
 
-This setting will enable horizontal left/right camera rotation (mouselook) while holding the right mouse button, and vertical up/down motion while holding the right mouse button.
+This binding enables left/right camera rotation (mouselook), and vertical camera movement, while holding the right mouse button. Paired with the :kbd:`WSAD` movement keys, this gives a familiar way to navigate the 3D view.
+
+.. note::
+
+    This binding is highly recommended, as the default right click action is "merge sectors", which can cause unwanted map alterations if you unknowingly right click in the 3D view. Right click will still merge sectors when in the 2D view however, and you can additionally remove the "MOUSE3 / sector / Merge" binding for peace of mind. You can still merge sectors using the more sensible :kbd:`m` key.
 
 * Open Preference, Keys tab, click the Add button
 * Click the Rebind button followed by the right mouse button (MOUSE3)
@@ -132,10 +145,11 @@ This setting will enable horizontal left/right camera rotation (mouselook) while
 * Choose the Mode as 3D View
 * Enter Params as `1`
 * Click OK
+* Optionally, delete the "MOUSE3 / sector / Merge" binding`
 
 **Adjust light levels with the mouse scroll wheel**
 
-This setting allows you to adjust the light level of the selected Sector by holding shift and scrolling the mouse wheel.
+This binding allows you to adjust the light level of selected Sectors in the 2D view, by holding :kbd:`shift` and scrolling the mouse wheel:
 
 * Open Preference, Keys tab, click the Add button
 * Click the Rebind button, hold shift and scroll the mouse wheel Up
@@ -147,11 +161,13 @@ This setting allows you to adjust the light level of the selected Sector by hold
 * Enter Params as `-8`
 * Click OK
 
-**Enhance 2D grid display**
+To allow this binding to work in the 3D view as well, we rebind the movement action:
 
-This setting increases the grid visibility and make it easier to distinguish the grid scale in 2D view.
-
-* Open Preference, Grid tab
-* Change the Grid style to Dotty
-* Hover over the Dotty grid colors to locate the "dot color"
-* Change the color to a high visibility hue (cyan for example, is hue 3)
+* Open Preference, Keys tab
+* Click the KEY header button to sort the list, the MOUSE keys should be listed first
+* Find the entry for LAX-WHEEL_DOWN / 3D_WHEEL_Move
+* click Edit then Rebind, roll your mouse wheel down
+* Click OK
+* Find the entry for LAX-WHEEL_UP / 3D_WHEEL_Move
+* click Edit then Rebind, roll your mouse wheel up
+* Click OK
