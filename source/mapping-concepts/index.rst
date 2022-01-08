@@ -83,10 +83,10 @@ Transformations
 
 You can scale and rotate selected Sectors, Linedefs and Vertices.
 
-Scaling
-^^^^^^^
+Scale dialog
+^^^^^^^^^^^^
 
-Click on :kbd:`Edit -> Scale Objects` or press :kbd:`F3` to show the scale dialog.
+Select the sector, lines or vertices to transform. Open the menu item :kbd:`Edit -> Scale Objects` or press :kbd:`F3` to show the scale dialog.
 
 .. image:: scale-selection.png
 
@@ -98,8 +98,17 @@ Click on :kbd:`Edit -> Scale Objects` or press :kbd:`F3` to show the scale dialo
 
 .. image:: scale-result.png
 
-Rotating
-^^^^^^^^
+Scale with the mouse
+^^^^^^^^^^^^^^^^^^^^
+
+You can scale sectors, lines or vertices with the mouse, by holding the :kbd:`r` key and moving the mouse cursor toward or away from the center of your selection.
+
+.. note::
+
+    If you find mouse scaling is too sensitive, try moving the cursor away from the center of your selection, before pressing :kbd:`r`. The scale factor is a function of distance from your cursor to the center of the selection, by putting some distance between your cursor and the selection you reduce that factor.
+
+Rotate dialog
+^^^^^^^^^^^^^
 
 Click on :kbd:`Edit -> Rotate Object` or press :kbd:`F4` to show the rotate dialog.
 
@@ -113,6 +122,15 @@ Click on :kbd:`Edit -> Rotate Object` or press :kbd:`F4` to show the rotate dial
 
 .. image:: rotate-result.png
 
+
+Rotate with the mouse
+^^^^^^^^^^^^^^^^^^^^
+
+You can rotate sectors, lines or vertices with the mouse, by holding :kbd:`Ctrl+r` and moving the mouse cursor toward or away from the center of your selection.
+
+.. note::
+
+    If you find mouse rotation is too sensitive, try moving the cursor away from the center of your selection, before pressing :kbd:`Ctrl+r`. The rotation factor is a function of distance from your cursor to the center of the selection, by putting some distance between your cursor and the selection you reduce that factor.
 
 Textures
 --------
