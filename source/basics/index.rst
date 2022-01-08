@@ -74,7 +74,8 @@ Adjusting ceiling height
 Texture alignment
 -----------------
 
-* Press :kbd:`tab` to enter 3D view
+* Press :kbd:`tab` to enter the 3D view
+* Press :kbd:`l` to activate Linedef mode
 * Click with the :kbd:`LMB` to select walls with misaligned textures
 
 .. image:: alignment-01.png
@@ -91,12 +92,17 @@ Texture alignment
 
 .. image:: alignment-02.png
 
+Manual alignment
+^^^^^^^^^^^^^^^^
+
+While in the 3D view and in Linedef mode, hold the :kbd:`r` key while moving the mouse cursor to adjust the texture alignment. You can also select multiple surfaces to align at the same time.
+
 Auto alignment
---------------
+^^^^^^^^^^^^^^
 
 If you need to align multiple surfaces, you can use the auto-align feature:
 
 * In the 2D view, enter Linedef edit mode :kbd:`l`
 * Highlight all lines to align
 * Press :kbd:`shift-A` to auto-align offsets on all selected Linedefs
-* This shortcut works in both 2D and 3D views
+* This shortcut only works in the 2D view
