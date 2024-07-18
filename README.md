@@ -15,9 +15,26 @@ Building
 
 The docs are built with [Sphinx](http://www.sphinx-doc.org/en/master/#). Consult the Sphinx documentation for installation instructions.
 
+```
+# Provision a virtual environment
+python -m venv .venv
+
+# Activate the environment (Windows)
+.venv\Scripts\activate.bat
+
+# or Activate the environment (*nix)
+source .venv/scripts/activate
+
+# Install Sphinx
+pip install sphinx
+```
+
 To build the documentation:
 
-    $ make html
+```
+# Activate the virtual environment (if not already) then
+make html
+```
 
 License
 =======
