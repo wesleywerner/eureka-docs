@@ -1,7 +1,7 @@
 Installation
 ============
 
-Also see the official `Eureka command line parameters <http://eureka-editor.sourceforge.net/?n=Docs.Invoking>`_ page.
+Also see the official `Eureka command line parameters <https://eureka-editor.sourceforge.net/Docs_Invoking.html>`_ page.
 
 Requirements
 ------------
@@ -27,15 +27,20 @@ You will need a Doom source port to play-test your maps. Here are a couple of op
 Windows
 -------
 
-To get the latest Eureka for Windows, go to the `Eureka project page <https://sourceforge.net/projects/eureka-editor/>`_ and click the big "download" button. Extract the zip somewhere memorable and run `eureka.exe`.
+To get the latest Eureka for Windows, go to the `Eureka release page <https://github.com/ioan-chera/eureka-editor/releases>`_ and choose the latest version. Extract the zip somewhere memorable and run `eureka.exe`.
+
+macOS
+-----
+
+Similar to Windows, download the DMG archive, open it in Finder, and when presented with the folder window, drag "Eureka Doom Editor" into the "Applications" linked folder. You can choose for M1/M2 (AppleSilicon, ARM) modern processors, or for older Intel processors, depending on your Mac.
 
 GNU / Linux
 -----------
 
 Your package manager might contain Eureka, albeit if outdated you can opt to build from source.
 
-* Locate the latest version on `the download page <https://sourceforge.net/projects/eureka-editor/files/Eureka/>`_
-* Get and extract `eureka-*-source.tar.gz`
+* Locate the latest version on `the release page <https://github.com/ioan-chera/eureka-editor/releases>`_
+* Get and extract the source code
 * Install the build dependencies:
 
 ::
@@ -56,6 +61,9 @@ Your package manager might contain Eureka, albeit if outdated you can opt to bui
 ::
 
     $ cd eureka*
+    $ mkdir build
+    $ cd build
+    $ cmake ..
     $ make
 
 * install Eureka
