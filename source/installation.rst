@@ -23,6 +23,7 @@ You will need a Doom source port to play-test your maps. Here are a couple of op
 * `PrBoom <http://prboom.sourceforge.net/>`_ - an advanced engine with fine-grained control over options controlling compatibility levels. This port is the standard for recording and playing of demos.
 * `Crispy Doom <https://fabiangreffrath.github.io/crispy-doom>`_ - a minimalist engine with few extra features.
 * `GZDoom <https://gzdoom.drdteam.org/>`_ - an advanced and moddable engine with many features, including newer and non-standard features. You should not base your map's compatibility off this port alone.
+* `Eternity Engine <https://eternity.youfailit.net/wiki/Main_Page>`_ - another advanced and moddable engine, designed in particular for backwards compatibility with less advanced engines while still adding new features.
 
 Windows
 -------
