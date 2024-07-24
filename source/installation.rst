@@ -32,7 +32,7 @@ To get the latest Eureka for Windows, go to the `Eureka release page <https://gi
 macOS
 -----
 
-Similar to Windows, download the DMG archive, open it in Finder, and when presented with the folder window, drag "Eureka Doom Editor" into the "Applications" linked folder. You can choose for M1/M2 (AppleSilicon, ARM) modern processors, or for older Intel processors, depending on your Mac.
+Similar to Windows, download the DMG archive from the same page, open it in Finder, and when presented with the folder window, drag `Eureka Doom Editor` into the `Applications` linked folder. You can choose the DMG archive for AppleSilicon (M1/M2 ARM) modern processors, or the one for older Intel processors, depending on your Mac.
 
 GNU / Linux
 -----------
@@ -65,13 +65,6 @@ Your package manager might contain Eureka, albeit if outdated you can opt to bui
     $ cd build
     $ cmake ..
     $ make
-
-* to run it without installing it, you need to be in the source folder, in order to see the up-to-date configuration files. Like this:
-
-::
-
-    $ cd ..
-    $ build/eureka
 
 * install Eureka
 
