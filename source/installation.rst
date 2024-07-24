@@ -66,6 +66,13 @@ Your package manager might contain Eureka, albeit if outdated you can opt to bui
     $ cmake ..
     $ make
 
+* to run it without installing it, you need to be in the source folder, in order to see the up-to-date configuration files. Like this:
+
+::
+
+    $ cd ..
+    $ build/eureka
+
 * install Eureka
 
 ::
