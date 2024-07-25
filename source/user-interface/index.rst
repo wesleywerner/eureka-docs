@@ -20,6 +20,7 @@ To move around the 2D view:
 * Click and drag with the middle mouse button (mouse wheel) to pan
 * Hold the :kbd:`a` key to pan with the mouse
 * Press :kbd:`home` to zoom the whole map into view
+* Use the arrow keys
 
 The Camera
 ----------
@@ -36,6 +37,7 @@ When in the 3D view you can control camera movement with the following controls:
 * Roll the mouse wheel to move forward/backward
 * Click and drag left/right with the middle mouse button to rotate the view
 * Click and drag up/down with the middle mouse button to raise/lower the view
+* Use the arrow and the :kbd:`w`, :kbd:`a`, :kbd:`s`, :kbd:`d`` keys
 
 The Grid
 --------
@@ -117,7 +119,7 @@ Keyboard Shortcuts
 
 The Keys page under Tools/Preferences is invaluable for finding or customizing shortcuts. Click the KEY, MODE and FUNCTION header buttons to sort the list. The `Cheatsheet <../cheatsheet>`_ only provides commonly used shortcuts, there are many more to discover.
 
-Eureka uses the concept of a :kbd:`META` key as a prefix to some shortcuts. By default the meta key is :kbd:`;` (semicolon). It can be changed in the Keys page under the function "MetaKey".
+Eureka uses the concept of a :kbd:`META` key as a prefix to some shortcuts. By default the meta key is :kbd:`;` (semicolon). It can be changed in the Keys page under the function "MetaKey". Normally :kbd:`META` is mapped to the "Windows" key on most keyboards; however if the system captures that key, you can still use the semicolon. Under macOS, the :kbd:`control` key is replaced by the Command key, so the actual Control key from macOS keyboards will work as :kbd:`META`.
 
 .. image:: preferences-keys.png
 
@@ -128,8 +130,8 @@ This section lists some alternative key bindings you may find useful, while demo
 
 Also see:
 
-* The official `Key System <http://eureka-editor.sourceforge.net/?n=Docs.KeySystem>`_ page.
-* The official `Bind Command Reference <http://eureka-editor.sourceforge.net/?n=Docs.CommandList>`_ page.
+* The official `Key System <https://eureka-editor.sourceforge.net/Docs_KeySystem.html>`_ page.
+* The official `Bind Command Reference <https://eureka-editor.sourceforge.net/Docs_CommandList.html>`_ page.
 
 **Mouselook in the 3D view**
 
