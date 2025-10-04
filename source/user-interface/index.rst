@@ -114,10 +114,37 @@ You can search for Things, line textures, sector flats, lines by type (specials)
 
 .. image:: find-panel.png
 
+
+Browsers
+--------
+Eureka includes several browsers to help you find and select textures, flats, things and specials.
+You can open a browser from the main menu under `Browsers`, or by selecting an element from the side
+panel.
+
+Advanced source ports allow placing wall and floor/ceiling textures on any surface type. By default
+Eureka has separate browsers for each type, but you can opt to keep them together in the same view
+by enabling `combine flats and textures in a single browser` in the `Preferences` dialog.
+
+Searching in the browsers
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+All browsers have a `Match` text field, to let you filter items by name. For advanced filtering, you
+can use wildcards. Here is a complete list of supported wildcards:
+
+* `*` - matches any sequence of characters, including none;
+* `?` - matches any single character;
+* `^` - if placed at the beginning, requires that the match exist at the beginning of the name;
+* `$` - if placed at the end, requires that the match exist at the end of the name;
+* `[abc]` - matches any of the characters a, b or c;
+* `[^abc]` or `[!abc]` - matches any character except a, b or c;
+* `{Xy|Yz|Zx}` or `{Xy,Yz,Zx}` - matches any of the sequences Xy, Yz or Zx;
+* `\\x` - escapes the character x, treating it as a literal, in case it's a wildcard character.
+
+
 Keyboard Shortcuts
 ------------------
 
-The Keys page under Tools/Preferences is invaluable for finding or customizing shortcuts. Click the KEY, MODE and FUNCTION header buttons to sort the list. The `Cheatsheet <../cheatsheet>`_ only provides commonly used shortcuts, there are many more to discover.
+The Keys page under Tools/Preferences is invaluable for finding or customizing shortcuts. Click the `Key`, `Mode` and `Function` header buttons to sort the list. The `Cheatsheet <../cheatsheet>`_ only provides commonly used shortcuts, there are many more to discover.
 
 Eureka uses the concept of a :kbd:`META` key as a prefix to some shortcuts. By default the meta key is :kbd:`;` (semicolon). It can be changed in the Keys page under the function "MetaKey". Normally :kbd:`META` is mapped to the "Windows" key on most keyboards; however if the system captures that key, you can still use the semicolon. Under macOS, the :kbd:`control` key is replaced by the Command key, so the actual Control key from macOS keyboards will work as :kbd:`META`.
 
