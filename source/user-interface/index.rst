@@ -133,6 +133,7 @@ can use wildcards. Here is a complete list of supported wildcards:
 
 * `*` - matches any sequence of characters, including none;
 * `?` - matches any single character;
+* `!` - if placed at the beginning, it will filter by items that do *not* match the pattern;
 * `^` - if placed at the beginning, requires that the match exist at the beginning of the name;
 * `$` - if placed at the end, requires that the match exist at the end of the name;
 * `[abc]` - matches any of the characters a, b or c;
