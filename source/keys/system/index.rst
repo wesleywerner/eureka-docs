@@ -46,7 +46,7 @@ The mouse buttons also have names, as follows:
 
     **WHEEL_RIGHT** : mouse wheel pushed right
 
-Lastly, the names of some keys may be unknown.  These can still be used, but they will be shown as a cryptic code number.  For example, on my system the left "Windows" key is shown as **0xfe03**.
+Lastly, the names of some keys may be unknown.  These can still be used, but they will be shown as a cryptic code number.  For example, the left "Windows" key may be shown as **0xfe03**.
 
 ----
 
@@ -59,13 +59,13 @@ Modifiers cannot be bound to commands by themselves, they require another normal
 
 The following modifiers are supported:
 
-    **SHIFT** : all keyboards have this, 'nuff said.
+    **SHIFT** : all keyboards have this.
 
-    **CTRL** : the control key. Under MacOS X this will be shown as "CMD" instead, and refers to the command key.
+    **CTRL** : the control key. Under macOS this will be shown as "CMD" instead, and refers to the command key.
 
-    **ALT** : most keyboards have **ALT** keys, however on Linux this modifier is often used by the window manager to perform window management tasks, making it less useful for bindings.  (I am not sure about Windows or MacOS X).
+    **ALT** : most keyboards have **ALT** keys, however on Linux this modifier is often used by the window manager to perform window management tasks, making it less useful for bindings.
 
-    **META** : an additional modifier key which some keyboards have, e.g. in Linux the "Windows" key is sometimes usable for this.  Eureka can generate fake META events by pressing the **;** key followed by a normal key, which can be useful for binding extra commands.
+    **META** : an additional modifier key which some keyboards have, e.g. in Linux the "Windows" key is sometimes usable for this.  Eureka can generate fake META events by pressing the **;** key followed by a normal key, which can be useful for binding extra commands. Under macOS, use the native Control key.
 
     **LAX** : this is not a real modifier key!  Instead this means that the binding will match in a lax way, where the current state of the **SHIFT** and **CTRL** modifiers is ignored.  This is useful for the navigation commands, which change speed depending on whether the **SHIFT** or **CTRL** modifiers are pressed.
 
