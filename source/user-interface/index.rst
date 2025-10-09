@@ -158,8 +158,8 @@ This section lists some alternative key bindings you may find useful, while demo
 
 Also see:
 
-* The official `Key System <https://eureka-editor.sourceforge.net/Docs_KeySystem.html>`_ page.
-* The official `Bind Command Reference <https://eureka-editor.sourceforge.net/Docs_CommandList.html>`_ page.
+* The official `Key System <../keys/system/index.html>`_ page.
+* The official `Bind Command Reference <../command-list/index.html>`_ page.
 
 **Mouselook in the 3D view**
 

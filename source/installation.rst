@@ -1,7 +1,7 @@
 Installation
 ============
 
-Also see the official `Eureka command line parameters <https://eureka-editor.sourceforge.net/Docs_Invoking.html>`_ page.
+Also see the official `Eureka command line parameters <invoking.html>`_ page.
 
 Requirements
 ------------
