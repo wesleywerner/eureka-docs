@@ -3,7 +3,7 @@ Key System
 
 Eureka has a flexible system for binding commands (editing functions) to specific keys on the keyboard and buttons on the mouse.  These bindings can be created and modified in the Preferences window, in the "Keys" tab (described below).
 
-For a description of all the commands, see the `CommandList <../command-list/index.html>`__ page.
+For a description of all the commands, see the `CommandList <../../command-list/index.html>`__ page.
 
 ----
 
