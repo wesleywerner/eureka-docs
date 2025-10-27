@@ -62,16 +62,12 @@ Your package manager might contain Eureka, albeit if outdated you can opt to bui
     $ sudo make install
 
 .. warning::
-    If you have an older Eureka version installed on the system, and try to run a more modern local source-built version of it, it will look for the installed configuration (`ugh`) files which came with the older version, and possibly result in user interface inconsistencies or errors. To prevent that, make sure to run this local build of Eureka using the `--install` command-line parameter (see `Invoking <invoking.html>`__ for the full list of command-line parameters):
-
-::
-
-    $ build/eureka --install .
+    If you have installed an older Eureka version, and try to run a newer source-built version without installing it, the new one will still look for the configuration (``ugh``) files from the old app, which may be out of date. To prevent that, make sure to run this local build of Eureka using the ``--install`` command-line parameter (see `Invoking <invoking.html>`__ for the full list of command-line parameters), from the source directory: ``$ build/eureka --install .``
 
 .. note::
-    See file INSTALL.txt included with the Eureka source for more build details.
+    Currently, Eureka won't detect its configuration files if installed to non-standard locations, i.e. others than ``/usr`` or ``/usr/local``, so you will need to invoke it with the ``--install`` command-line option explicitly in that case. This issue may be solved on next versions.
 
-* To uninstall Eureka later, you can run:
+To uninstall Eureka later, you can run:
 
 ::
 
