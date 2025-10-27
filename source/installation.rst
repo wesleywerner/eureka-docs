@@ -42,37 +42,39 @@ Your package manager might contain Eureka, albeit if outdated you can opt to bui
 
 * Locate the latest version on `the release page <https://github.com/ioan-chera/eureka-editor/releases>`_
 * Get and extract the source code
-* Install the build dependencies:
+* Install the build dependencies. On Debian-based distros the command may be ``sudo apt-get install build-essential``. You will also need to install the following libraries: X11, JPEG, PNG and ZLIB.
+  The main user interface library, FLTK, will be downloaded during build, unless you add ``-DUSE_SYSTEM_FLTK=ON`` to the ``cmake`` command line.
 
-::
-
-    $ sudo apt-get install \
-    build-essential \
-    libfltk1.3-dev \
-    libxft-dev \
-    libxinerama-dev \
-    libfontconfig1-dev \
-    libjpeg-dev \
-    libpng12-dev \
-    zlib1g-dev \
-    xdg-utils
-
-* make the binary
+* Make the binary:
 
 ::
 
     $ cd eureka*
     $ mkdir build
     $ cd build
-    $ cmake ..
+    $ cmake -DCMAKE_BUILD_TYPE=Release ..
     $ make
 
-* install Eureka
+* Install Eureka:
 
 ::
 
     $ sudo make install
 
-.. note::
+.. warning::
+    If you have an older Eureka version installed on the system, and try to run a more modern local source-built version of it, it will look for the installed configuration (`ugh`) files which came with the older version, and possibly result in user interface inconsistencies or errors. To prevent that, make sure to run this local build of Eureka using the `--install` command-line parameter (see [invoking] for the full list of parameters):
 
-    See file INSTALL.txt included with the Eureka source for detailed build instructions.
+::
+
+    $ build/eureka --install .
+
+.. note::
+    See file INSTALL.txt included with the Eureka source for more build details.
+
+* To uninstall Eureka later, you can run:
+
+::
+
+    $ sudo make uninstall
+
+or delete all files listed in the ``install_manifest.txt`` file produced during installation.
