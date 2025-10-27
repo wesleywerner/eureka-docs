@@ -62,7 +62,7 @@ Your package manager might contain Eureka, albeit if outdated you can opt to bui
     $ sudo make install
 
 .. warning::
-    If you have an older Eureka version installed on the system, and try to run a more modern local source-built version of it, it will look for the installed configuration (`ugh`) files which came with the older version, and possibly result in user interface inconsistencies or errors. To prevent that, make sure to run this local build of Eureka using the `--install` command-line parameter (see [invoking] for the full list of parameters):
+    If you have an older Eureka version installed on the system, and try to run a more modern local source-built version of it, it will look for the installed configuration (`ugh`) files which came with the older version, and possibly result in user interface inconsistencies or errors. To prevent that, make sure to run this local build of Eureka using the `--install` command-line parameter (see `Invoking <invoking.html>`__ for the full list of command-line parameters):
 
 ::
 
