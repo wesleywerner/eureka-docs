@@ -14,6 +14,7 @@ Contents
    mapping-concepts/index
    basics/index
    cookbook/index
+   configuration/index
    command-list/index
    keys/index
    cheatsheet/index
