@@ -42,8 +42,8 @@ Your package manager might contain Eureka, albeit if outdated you can opt to bui
 
 * Locate the latest version on `the release page <https://github.com/ioan-chera/eureka-editor/releases>`_
 * Get and extract the source code
-* Install the build dependencies. On Debian-based distros the command may be ``sudo apt-get install build-essential``. You will also need to install the following libraries: X11, JPEG, PNG and ZLIB.
-  The main user interface library, FLTK, will be downloaded during build, unless you add ``-DUSE_SYSTEM_FLTK=ON`` to the ``cmake`` command line.
+* Install the build dependencies. On Debian-based distros the command may be ``apt install cmake libopengl-dev libglx-dev libgl-dev libglu-dev libjpeg-dev libpng-dev libxpm-dev zlib1g-dev``. You may need to prepend this with ``sudo`` in case of "permission denied" errors. Other dependencies may be necessary if not already installed, such as ``build-essential``.
+  The main user interface library, FLTK, will be downloaded during build, unless you add ``-DUSE_SYSTEM_FLTK=ON`` to the ``cmake`` command line. This will require a suitable ``libfltk`` installation, which may be ``libfltk-dev``, ``libfltk1.3-dev`` or ``libfltk1.4-dev``. Beware that if the maximum available version of FLTK is 1.3, the application may behave incorrectly.
 
 * Make the binary:
 
