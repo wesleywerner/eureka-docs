@@ -38,31 +38,80 @@ Similar to Windows, download the DMG archive from the release page, open it in F
 GNU / Linux
 -----------
 
-Your package manager might contain Eureka, albeit if outdated you can opt to build from source.
+Your package manager might contain Eureka, albeit if outdated you can opt to build from source:
 
 * Locate the latest version on `the release page <https://github.com/ioan-chera/eureka-editor/releases>`_
 * Get and extract the source code
-* Install the build dependencies. On Debian-based distros the command may be ``apt install cmake libopengl-dev libglx-dev libgl-dev libglu-dev libjpeg-dev libpng-dev libxpm-dev zlib1g-dev``. You may need to prepend this with ``sudo`` in case of "permission denied" errors. Other dependencies may be necessary if not already installed, such as ``build-essential``.
-  The main user interface library, FLTK, will be downloaded during build, unless you add ``-DUSE_SYSTEM_FLTK=ON`` to the ``cmake`` command line. This will require a suitable ``libfltk`` installation, which may be ``libfltk-dev``, ``libfltk1.3-dev`` or ``libfltk1.4-dev``. Beware that if the maximum available version of FLTK is 1.3, the application may behave incorrectly.
-
-* Make the binary:
+* Open a Terminal console.
+* Install the build dependencies. On Debian-based distros the command may be:
 
 ::
 
-    $ cd eureka*
+    $ apt install build-essential cmake libopengl-dev libglx-dev libgl-dev libglu-dev libjpeg-dev libpng-dev libxft-dev libxpm-dev zlib1g-dev
+      
+You may need to prepend this with ``sudo`` in case of "permission denied" errors.
+
+The main user interface library, FLTK, will be downloaded during build, unless you add ``-DUSE_SYSTEM_FLTK=ON`` to the ``cmake`` command line. This will require a suitable ``libfltk`` installation, which may be ``libfltk-dev``, ``libfltk1.3-dev`` or ``libfltk1.4-dev``. Beware that if the maximum available system version of FLTK is 1.3, the application may behave incorrectly.
+
+Now start making the binary. First, make sure you are in the extracted source code folder.
+
+::
+
+    $ cd path/to/eureka-source-folder
+
+Substitute the actual extracted path here.
+
+Now, since we use the ``cmake`` build system, a common pattern is to create a "build" subdirectory and enter it:
+
+::
+
     $ mkdir build
     $ cd build
-    $ cmake -DCMAKE_BUILD_TYPE=Release ..
-    $ make
 
-* Install Eureka:
+This will create a new ``build`` directory under the source code folder. Inside this folder, you will need to run the ``cmake`` tool. The recommended command line is:
 
 ::
 
-    $ sudo make install
+    $ cmake -DCMAKE_BUILD_TYPE=Release -DFLTK_GRAPHICS_CAIRO=ON ..
+
+The ``-DCMAKE_BUILD_TYPE=Release`` ensures that what you produce will run at the best performance, and ``-DFLTK_GRAPHICS_CAIRO=ON`` fixes some graphics issues with FLTK which may happen otherwise. It may not be required on every system. ``..`` means to tell ``cmake`` to load the information from the parent directory, which should be the one containing the source code, as extracted from GitHub.
+
+If you get any errors of packages not found, try finding them via ``apt search`` followed by a key part of their name, then install them. If given multiple choices, pick the ones ending with ``-dev``.
+
+If instead you opt to use a system-installed FLTK, do this instead:
+
+::
+
+    $ cmake -DUSE_SYSTEM_FLTK=ON ..
+
+No Cairo specification is used in this case, because the system installed FLTK may have already been configured with it.
+
+Now run ``make`` to perform the actual compilation:
+
+::
+
+    $ make
+
+If it feels too slow, you can run something like ``make -j$(nproc)``, which parallelizes compilation to the number of CPU processors (``-j`` is the option to parallelize, and ``$(nproc)`` resolves to the number of processors). Again, as with ``cmake``, take note of any "missing header" errors which may be about missing dependencies, and install any of them as necessary.
+
+If all went well, at this point you already have Eureka available. You can run the local build by going up one level and starting it, as this:
+
+::
+
+    $ ./eureka --install ..
+
+The ``--install ..`` simply tells Eureka that the installation data -- typically the ``ugh`` configuration files and default key bindings -- are located in the parent directory. It does `not` install Eureka to the system.
+
+After this, you can install Eureka to the system, so you can run it directly via the ``eureka`` terminal command from anywhere, and possibly also have an icon in the GUI desktop environment, using the following command:
+
+::
+
+    $ make install
+
+You may need to prepend it with ``sudo`` if you get "permission denied" or "operation not permitted" errors.
 
 .. warning::
-    If you have installed an older Eureka version, and try to run a newer source-built version without installing it, the new one will still look for the configuration (``ugh``) files from the old app, which may be out of date. To prevent that, make sure to run this local build of Eureka using the ``--install`` command-line parameter (see `Invoking <invoking.html>`__ for the full list of command-line parameters), from the source directory: ``$ build/eureka --install .``
+    If you have installed an older Eureka version, and try to run a newer source-built version without installing it, the new one will still look for the configuration (``ugh``) files from the old installed app, which may be out of date. To prevent that, make sure to run this local build of Eureka using the ``--install`` command-line parameter (see `Invoking <invoking.html>`__ for the full list of command-line parameters).
 
 .. note::
     Currently, Eureka won't detect its configuration files if installed to non-standard locations, i.e. others than ``/usr`` or ``/usr/local``, so you will need to invoke it with the ``--install`` command-line option explicitly in that case. This issue may be solved on next versions.
@@ -71,6 +120,6 @@ To uninstall Eureka later, you can run:
 
 ::
 
-    $ sudo make uninstall
+    $ make uninstall
 
-or delete all files listed in the ``install_manifest.txt`` file produced during installation.
+This again may require ``sudo``. If it doesn't work, look inside an ``install_manifest.txt`` file that was generated during installation, and you will see the list of paths to manually delete (which again may require elevated privileges activateable with ``sudo``). If this file is missing, you can perform an installation instead (which should in effect do nothing), `then` retry uninstallation.
