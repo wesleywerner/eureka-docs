@@ -47,9 +47,17 @@ Your package manager might contain Eureka, albeit if outdated you can opt to bui
 
 ::
 
-    $ apt install build-essential cmake libopengl-dev libglx-dev libgl-dev libglu-dev libjpeg-dev libpng-dev libxft-dev libxpm-dev zlib1g-dev
+    $ apt install build-essential cmake libopengl-dev libglx-dev libgl-dev libglu-dev libjpeg-dev libpng-dev libxpm-dev zlib1g-dev
+
+If your Linux is running on X11 instead of Wayland, also add:
+
+::
+
+    $ apt install libpango1.0-dev libxft-dev
+
+These are needed for proper font rendering and unicode support.
       
-You may need to prepend this with ``sudo`` in case of "permission denied" errors.
+You may need to prepend these commands with ``sudo`` in case of "permission denied" errors.
 
 The main user interface library, FLTK, will be downloaded during build, unless you add ``-DUSE_SYSTEM_FLTK=ON`` to the ``cmake`` command line. This will require a suitable ``libfltk`` installation, which may be ``libfltk-dev``, ``libfltk1.3-dev`` or ``libfltk1.4-dev``. Beware that if the maximum available system version of FLTK is 1.3, the application may behave incorrectly.
 
@@ -68,13 +76,13 @@ Now, since we use the ``cmake`` build system, a common pattern is to create a "b
     $ mkdir build
     $ cd build
 
-This will create a new ``build`` directory under the source code folder. Inside this folder, you will need to run the ``cmake`` tool. The recommended command line is:
+This will create a new ``build`` directory under the source code folder. Inside this folder, you will need to run the ``cmake`` tool. The recommended command line is (under Wayland you can omit the ``-DFLTK_GRAPHICS_CAIRO=ON`` option):
 
 ::
 
     $ cmake -DCMAKE_BUILD_TYPE=Release -DFLTK_GRAPHICS_CAIRO=ON ..
 
-The ``-DCMAKE_BUILD_TYPE=Release`` ensures that what you produce will run at the best performance, and ``-DFLTK_GRAPHICS_CAIRO=ON`` fixes some graphics issues with FLTK which may happen otherwise. It may not be required on every system. ``..`` means to tell ``cmake`` to load the information from the parent directory, which should be the one containing the source code, as extracted from GitHub.
+The ``-DCMAKE_BUILD_TYPE=Release`` ensures that what you produce will run at the best performance, and ``-DFLTK_GRAPHICS_CAIRO=ON`` (needed on X11) fixes some graphics issues with FLTK which may happen otherwise. It may not be required on every system. ``..`` means to tell ``cmake`` to load the information from the parent directory, which should be the one containing the source code, as extracted from GitHub.
 
 If you get any errors of packages not found, try finding them via ``apt search`` followed by a key part of their name, then install them. If given multiple choices, pick the ones ending with ``-dev``.
 
